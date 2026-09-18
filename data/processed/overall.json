@@ -1,0 +1,10 @@
+{
+  "n_total_cases": 245704,
+  "n_closed": 243716,
+  "n_open": 1988,
+  "median_hours": 22.3,
+  "mean_hours": 111.7,
+  "p75_hours": 96.7,
+  "p90_hours": 220.0,
+  "p95_hours": 457.1
+}

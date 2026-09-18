@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minneapolis 311: How fast does the city respond?</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>How quickly does Minneapolis resolve 311 requests?</h1>
+    <p class="subtitle">
+      Based on 245,704 service requests opened January 2024 &ndash; June 2026.
+    </p>
+  </header>
+
+  <section id="overall-stats">
+    <!-- Filled in by app.js from data/processed/overall.json -->
+  </section>
+
+  <section id="by-type">
+    <h2>Median resolution time by request type</h2>
+    <canvas id="typeChart" height="400"></canvas>
+  </section>
+
+  <section id="by-location">
+    <h2>By neighborhood</h2>
+    <p class="placeholder-note">
+      Map view coming next &mdash; pending the neighborhood boundary join.
+    </p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
