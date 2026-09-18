@@ -47,6 +47,7 @@ function renderTypeChart(byType) {
     },
     options: {
       indexAxis: "y",
+      maintainAspectRatio: false, // height comes from .chart-wrap, not the aspect ratio
       plugins: { legend: { display: false } },
       scales: {
         x: { title: { display: true, text: "Hours to resolve (median)" } },

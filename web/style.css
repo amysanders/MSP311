@@ -63,6 +63,11 @@ section h2 {
   font-size: 0.85rem;
 }
 
+.chart-wrap {
+  position: relative;
+  height: 480px;
+}
+
 .stat .note {
   color: var(--muted);
   font-size: 0.75rem;
