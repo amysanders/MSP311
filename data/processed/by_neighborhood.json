@@ -1,0 +1,803 @@
+{
+  "neighborhoods": [
+    {
+      "neighborhood": "Phillips West",
+      "n_cases": 1650,
+      "n_closed": 1633,
+      "n_open": 17,
+      "median_hours": 27.5,
+      "mean_hours": 115.8,
+      "p90_hours": 239.0
+    },
+    {
+      "neighborhood": "Downtown West",
+      "n_cases": 5119,
+      "n_closed": 5063,
+      "n_open": 56,
+      "median_hours": 18.2,
+      "mean_hours": 111.4,
+      "p90_hours": 262.6
+    },
+    {
+      "neighborhood": "Downtown East",
+      "n_cases": 1221,
+      "n_closed": 1204,
+      "n_open": 17,
+      "median_hours": 13.1,
+      "mean_hours": 103.9,
+      "p90_hours": 240.1
+    },
+    {
+      "neighborhood": "Ventura Village",
+      "n_cases": 2714,
+      "n_closed": 2697,
+      "n_open": 17,
+      "median_hours": 24.5,
+      "mean_hours": 98.1,
+      "p90_hours": 217.5
+    },
+    {
+      "neighborhood": "Sumner - Glenwood",
+      "n_cases": 841,
+      "n_closed": 833,
+      "n_open": 8,
+      "median_hours": 16.9,
+      "mean_hours": 104.6,
+      "p90_hours": 165.6
+    },
+    {
+      "neighborhood": "Shingle Creek",
+      "n_cases": 876,
+      "n_closed": 873,
+      "n_open": 3,
+      "median_hours": 20.4,
+      "mean_hours": 74.1,
+      "p90_hours": 157.0
+    },
+    {
+      "neighborhood": "Lind - Bohanon",
+      "n_cases": 2138,
+      "n_closed": 2134,
+      "n_open": 4,
+      "median_hours": 23.5,
+      "mean_hours": 79.1,
+      "p90_hours": 169.3
+    },
+    {
+      "neighborhood": "Webber - Camden",
+      "n_cases": 3203,
+      "n_closed": 3190,
+      "n_open": 13,
+      "median_hours": 24.4,
+      "mean_hours": 85.7,
+      "p90_hours": 188.0
+    },
+    {
+      "neighborhood": "Bottineau",
+      "n_cases": 1117,
+      "n_closed": 1110,
+      "n_open": 7,
+      "median_hours": 20.5,
+      "mean_hours": 89.2,
+      "p90_hours": 212.6
+    },
+    {
+      "neighborhood": "Victory",
+      "n_cases": 2016,
+      "n_closed": 2010,
+      "n_open": 6,
+      "median_hours": 23.4,
+      "mean_hours": 81.3,
+      "p90_hours": 172.4
+    },
+    {
+      "neighborhood": "Humboldt Industrial Area",
+      "n_cases": 132,
+      "n_closed": 132,
+      "n_open": 0,
+      "median_hours": 19.7,
+      "mean_hours": 76.6,
+      "p90_hours": 169.0
+    },
+    {
+      "neighborhood": "Howe",
+      "n_cases": 3791,
+      "n_closed": 3772,
+      "n_open": 19,
+      "median_hours": 22.8,
+      "mean_hours": 117.1,
+      "p90_hours": 216.3
+    },
+    {
+      "neighborhood": "Hiawatha",
+      "n_cases": 2905,
+      "n_closed": 2887,
+      "n_open": 18,
+      "median_hours": 24.9,
+      "mean_hours": 108.6,
+      "p90_hours": 188.6
+    },
+    {
+      "neighborhood": "Windom",
+      "n_cases": 1458,
+      "n_closed": 1451,
+      "n_open": 7,
+      "median_hours": 23.2,
+      "mean_hours": 82.9,
+      "p90_hours": 190.2
+    },
+    {
+      "neighborhood": "Ericsson",
+      "n_cases": 2003,
+      "n_closed": 1987,
+      "n_open": 16,
+      "median_hours": 22.9,
+      "mean_hours": 95.0,
+      "p90_hours": 189.1
+    },
+    {
+      "neighborhood": "Field",
+      "n_cases": 1204,
+      "n_closed": 1189,
+      "n_open": 15,
+      "median_hours": 39.1,
+      "mean_hours": 203.9,
+      "p90_hours": 421.4
+    },
+    {
+      "neighborhood": "Page",
+      "n_cases": 580,
+      "n_closed": 575,
+      "n_open": 5,
+      "median_hours": 25.1,
+      "mean_hours": 80.9,
+      "p90_hours": 166.4
+    },
+    {
+      "neighborhood": "Como",
+      "n_cases": 3095,
+      "n_closed": 3076,
+      "n_open": 19,
+      "median_hours": 21.6,
+      "mean_hours": 91.9,
+      "p90_hours": 192.5
+    },
+    {
+      "neighborhood": "Cedar Riverside",
+      "n_cases": 1277,
+      "n_closed": 1266,
+      "n_open": 11,
+      "median_hours": 19.1,
+      "mean_hours": 116.6,
+      "p90_hours": 306.1
+    },
+    {
+      "neighborhood": "Prospect Park - East River Road",
+      "n_cases": 2792,
+      "n_closed": 2762,
+      "n_open": 30,
+      "median_hours": 17.9,
+      "mean_hours": 111.4,
+      "p90_hours": 220.3
+    },
+    {
+      "neighborhood": "University of Minnesota",
+      "n_cases": 540,
+      "n_closed": 532,
+      "n_open": 8,
+      "median_hours": 15.7,
+      "mean_hours": 85.9,
+      "p90_hours": 219.3
+    },
+    {
+      "neighborhood": "Jordan",
+      "n_cases": 4436,
+      "n_closed": 4429,
+      "n_open": 7,
+      "median_hours": 21.7,
+      "mean_hours": 75.5,
+      "p90_hours": 184.6
+    },
+    {
+      "neighborhood": "Hawthorne",
+      "n_cases": 3651,
+      "n_closed": 3639,
+      "n_open": 12,
+      "median_hours": 21.9,
+      "mean_hours": 88.7,
+      "p90_hours": 176.9
+    },
+    {
+      "neighborhood": "Willard - Hay",
+      "n_cases": 4510,
+      "n_closed": 4488,
+      "n_open": 22,
+      "median_hours": 21.8,
+      "mean_hours": 92.3,
+      "p90_hours": 209.9
+    },
+    {
+      "neighborhood": "Near - North",
+      "n_cases": 8667,
+      "n_closed": 8652,
+      "n_open": 15,
+      "median_hours": 3.2,
+      "mean_hours": 42.1,
+      "p90_hours": 95.0
+    },
+    {
+      "neighborhood": "Harrison",
+      "n_cases": 1581,
+      "n_closed": 1564,
+      "n_open": 17,
+      "median_hours": 24.5,
+      "mean_hours": 112.4,
+      "p90_hours": 219.0
+    },
+    {
+      "neighborhood": "Loring Park",
+      "n_cases": 3284,
+      "n_closed": 3262,
+      "n_open": 22,
+      "median_hours": 15.8,
+      "mean_hours": 98.2,
+      "p90_hours": 193.9
+    },
+    {
+      "neighborhood": "Steven's Square - Loring Heights",
+      "n_cases": 1988,
+      "n_closed": 1968,
+      "n_open": 20,
+      "median_hours": 19.5,
+      "mean_hours": 116.8,
+      "p90_hours": 240.2
+    },
+    {
+      "neighborhood": "Minnehaha",
+      "n_cases": 1484,
+      "n_closed": 1473,
+      "n_open": 11,
+      "median_hours": 23.9,
+      "mean_hours": 106.0,
+      "p90_hours": 192.0
+    },
+    {
+      "neighborhood": "Diamond Lake",
+      "n_cases": 1660,
+      "n_closed": 1654,
+      "n_open": 6,
+      "median_hours": 23.0,
+      "mean_hours": 73.2,
+      "p90_hours": 180.3
+    },
+    {
+      "neighborhood": "Cooper",
+      "n_cases": 1607,
+      "n_closed": 1599,
+      "n_open": 8,
+      "median_hours": 26.2,
+      "mean_hours": 128.5,
+      "p90_hours": 268.5
+    },
+    {
+      "neighborhood": "Tangletown",
+      "n_cases": 1574,
+      "n_closed": 1555,
+      "n_open": 19,
+      "median_hours": 23.6,
+      "mean_hours": 121.4,
+      "p90_hours": 187.2
+    },
+    {
+      "neighborhood": "North Loop",
+      "n_cases": 2072,
+      "n_closed": 2049,
+      "n_open": 23,
+      "median_hours": 21.1,
+      "mean_hours": 116.3,
+      "p90_hours": 271.2
+    },
+    {
+      "neighborhood": "Hale",
+      "n_cases": 837,
+      "n_closed": 834,
+      "n_open": 3,
+      "median_hours": 21.5,
+      "mean_hours": 78.2,
+      "p90_hours": 159.9
+    },
+    {
+      "neighborhood": "Keewaydin",
+      "n_cases": 1121,
+      "n_closed": 1114,
+      "n_open": 7,
+      "median_hours": 20.2,
+      "mean_hours": 86.1,
+      "p90_hours": 188.8
+    },
+    {
+      "neighborhood": "Fulton",
+      "n_cases": 2172,
+      "n_closed": 2163,
+      "n_open": 9,
+      "median_hours": 23.8,
+      "mean_hours": 88.2,
+      "p90_hours": 213.3
+    },
+    {
+      "neighborhood": "Lynnhurst",
+      "n_cases": 1960,
+      "n_closed": 1947,
+      "n_open": 13,
+      "median_hours": 21.1,
+      "mean_hours": 90.2,
+      "p90_hours": 170.5
+    },
+    {
+      "neighborhood": "Bancroft",
+      "n_cases": 1336,
+      "n_closed": 1334,
+      "n_open": 2,
+      "median_hours": 26.5,
+      "mean_hours": 107.6,
+      "p90_hours": 228.9
+    },
+    {
+      "neighborhood": "Standish",
+      "n_cases": 3456,
+      "n_closed": 3436,
+      "n_open": 20,
+      "median_hours": 28.6,
+      "mean_hours": 107.0,
+      "p90_hours": 211.3
+    },
+    {
+      "neighborhood": "Seward",
+      "n_cases": 3776,
+      "n_closed": 3750,
+      "n_open": 26,
+      "median_hours": 21.5,
+      "mean_hours": 98.5,
+      "p90_hours": 197.7
+    },
+    {
+      "neighborhood": "Longfellow",
+      "n_cases": 3649,
+      "n_closed": 3632,
+      "n_open": 17,
+      "median_hours": 25.4,
+      "mean_hours": 133.4,
+      "p90_hours": 312.4
+    },
+    {
+      "neighborhood": "Lowry Hill East",
+      "n_cases": 5988,
+      "n_closed": 5952,
+      "n_open": 36,
+      "median_hours": 21.8,
+      "mean_hours": 165.9,
+      "p90_hours": 390.3
+    },
+    {
+      "neighborhood": "South Uptown",
+      "n_cases": 3024,
+      "n_closed": 3002,
+      "n_open": 22,
+      "median_hours": 23.2,
+      "mean_hours": 85.6,
+      "p90_hours": 187.5
+    },
+    {
+      "neighborhood": "East Phillips",
+      "n_cases": 3059,
+      "n_closed": 3037,
+      "n_open": 22,
+      "median_hours": 22.6,
+      "mean_hours": 114.4,
+      "p90_hours": 241.2
+    },
+    {
+      "neighborhood": "Cleveland",
+      "n_cases": 1842,
+      "n_closed": 1836,
+      "n_open": 6,
+      "median_hours": 24.4,
+      "mean_hours": 83.5,
+      "p90_hours": 177.3
+    },
+    {
+      "neighborhood": "Wenonah",
+      "n_cases": 1211,
+      "n_closed": 1207,
+      "n_open": 4,
+      "median_hours": 22.5,
+      "mean_hours": 87.8,
+      "p90_hours": 197.7
+    },
+    {
+      "neighborhood": "Holland",
+      "n_cases": 2545,
+      "n_closed": 2531,
+      "n_open": 14,
+      "median_hours": 20.0,
+      "mean_hours": 88.5,
+      "p90_hours": 192.6
+    },
+    {
+      "neighborhood": "Audubon Park",
+      "n_cases": 2329,
+      "n_closed": 2316,
+      "n_open": 13,
+      "median_hours": 19.5,
+      "mean_hours": 78.4,
+      "p90_hours": 171.6
+    },
+    {
+      "neighborhood": "Regina",
+      "n_cases": 1111,
+      "n_closed": 1098,
+      "n_open": 13,
+      "median_hours": 25.4,
+      "mean_hours": 150.6,
+      "p90_hours": 287.1
+    },
+    {
+      "neighborhood": "Northrop",
+      "n_cases": 1825,
+      "n_closed": 1811,
+      "n_open": 14,
+      "median_hours": 24.0,
+      "mean_hours": 102.9,
+      "p90_hours": 199.3
+    },
+    {
+      "neighborhood": "Sheridan",
+      "n_cases": 1960,
+      "n_closed": 1956,
+      "n_open": 4,
+      "median_hours": 16.3,
+      "mean_hours": 89.4,
+      "p90_hours": 195.3
+    },
+    {
+      "neighborhood": "Logan Park",
+      "n_cases": 1370,
+      "n_closed": 1361,
+      "n_open": 9,
+      "median_hours": 24.1,
+      "mean_hours": 164.2,
+      "p90_hours": 314.0
+    },
+    {
+      "neighborhood": "Windom Park",
+      "n_cases": 2050,
+      "n_closed": 2045,
+      "n_open": 5,
+      "median_hours": 22.0,
+      "mean_hours": 94.4,
+      "p90_hours": 195.2
+    },
+    {
+      "neighborhood": "Linden Hills",
+      "n_cases": 3310,
+      "n_closed": 3281,
+      "n_open": 29,
+      "median_hours": 20.6,
+      "mean_hours": 79.3,
+      "p90_hours": 182.0
+    },
+    {
+      "neighborhood": "East Harriet",
+      "n_cases": 1660,
+      "n_closed": 1650,
+      "n_open": 10,
+      "median_hours": 20.3,
+      "mean_hours": 93.6,
+      "p90_hours": 193.3
+    },
+    {
+      "neighborhood": "King Field",
+      "n_cases": 4027,
+      "n_closed": 4007,
+      "n_open": 20,
+      "median_hours": 21.3,
+      "mean_hours": 90.1,
+      "p90_hours": 171.2
+    },
+    {
+      "neighborhood": "Morris Park",
+      "n_cases": 838,
+      "n_closed": 835,
+      "n_open": 3,
+      "median_hours": 21.9,
+      "mean_hours": 69.4,
+      "p90_hours": 195.3
+    },
+    {
+      "neighborhood": "Mid - City Industrial",
+      "n_cases": 646,
+      "n_closed": 641,
+      "n_open": 5,
+      "median_hours": 26.6,
+      "mean_hours": 137.4,
+      "p90_hours": 331.2
+    },
+    {
+      "neighborhood": "Midtown Phillips",
+      "n_cases": 2831,
+      "n_closed": 2816,
+      "n_open": 15,
+      "median_hours": 24.2,
+      "mean_hours": 110.1,
+      "p90_hours": 235.7
+    },
+    {
+      "neighborhood": "Bryn - Mawr",
+      "n_cases": 1485,
+      "n_closed": 1474,
+      "n_open": 11,
+      "median_hours": 22.6,
+      "mean_hours": 99.9,
+      "p90_hours": 194.7
+    },
+    {
+      "neighborhood": "Northeast Park",
+      "n_cases": 808,
+      "n_closed": 800,
+      "n_open": 8,
+      "median_hours": 29.3,
+      "mean_hours": 169.9,
+      "p90_hours": 380.4
+    },
+    {
+      "neighborhood": "St. Anthony West",
+      "n_cases": 1915,
+      "n_closed": 1904,
+      "n_open": 11,
+      "median_hours": 12.9,
+      "mean_hours": 106.6,
+      "p90_hours": 218.8
+    },
+    {
+      "neighborhood": "St. Anthony East",
+      "n_cases": 1105,
+      "n_closed": 1101,
+      "n_open": 4,
+      "median_hours": 19.5,
+      "mean_hours": 105.6,
+      "p90_hours": 200.4
+    },
+    {
+      "neighborhood": "Central",
+      "n_cases": 4771,
+      "n_closed": 4707,
+      "n_open": 64,
+      "median_hours": 42.9,
+      "mean_hours": 115.0,
+      "p90_hours": 237.0
+    },
+    {
+      "neighborhood": "Powderhorn Park",
+      "n_cases": 4945,
+      "n_closed": 4918,
+      "n_open": 27,
+      "median_hours": 24.7,
+      "mean_hours": 107.9,
+      "p90_hours": 221.5
+    },
+    {
+      "neighborhood": "Corcoran",
+      "n_cases": 2054,
+      "n_closed": 2046,
+      "n_open": 8,
+      "median_hours": 31.4,
+      "mean_hours": 113.5,
+      "p90_hours": 237.1
+    },
+    {
+      "neighborhood": "Bryant",
+      "n_cases": 1376,
+      "n_closed": 1373,
+      "n_open": 3,
+      "median_hours": 26.4,
+      "mean_hours": 94.1,
+      "p90_hours": 194.4
+    },
+    {
+      "neighborhood": "Kenny",
+      "n_cases": 941,
+      "n_closed": 936,
+      "n_open": 5,
+      "median_hours": 23.0,
+      "mean_hours": 100.3,
+      "p90_hours": 195.6
+    },
+    {
+      "neighborhood": "Armatage",
+      "n_cases": 1387,
+      "n_closed": 1379,
+      "n_open": 8,
+      "median_hours": 23.9,
+      "mean_hours": 93.2,
+      "p90_hours": 187.1
+    },
+    {
+      "neighborhood": "Beltrami",
+      "n_cases": 499,
+      "n_closed": 495,
+      "n_open": 4,
+      "median_hours": 26.7,
+      "mean_hours": 114.6,
+      "p90_hours": 260.9
+    },
+    {
+      "neighborhood": "Cedar - Isles - Dean",
+      "n_cases": 939,
+      "n_closed": 932,
+      "n_open": 7,
+      "median_hours": 22.6,
+      "mean_hours": 115.8,
+      "p90_hours": 210.9
+    },
+    {
+      "neighborhood": "Kenwood",
+      "n_cases": 730,
+      "n_closed": 724,
+      "n_open": 6,
+      "median_hours": 20.6,
+      "mean_hours": 116.1,
+      "p90_hours": 198.5
+    },
+    {
+      "neighborhood": "Lowry Hill",
+      "n_cases": 1616,
+      "n_closed": 1593,
+      "n_open": 23,
+      "median_hours": 23.3,
+      "mean_hours": 188.1,
+      "p90_hours": 437.4
+    },
+    {
+      "neighborhood": "East Isles",
+      "n_cases": 2164,
+      "n_closed": 2126,
+      "n_open": 38,
+      "median_hours": 30.4,
+      "mean_hours": 209.9,
+      "p90_hours": 597.4
+    },
+    {
+      "neighborhood": "Elliot Park",
+      "n_cases": 1838,
+      "n_closed": 1832,
+      "n_open": 6,
+      "median_hours": 21.1,
+      "mean_hours": 101.6,
+      "p90_hours": 245.2
+    },
+    {
+      "neighborhood": "Nicollet Island - East Bank",
+      "n_cases": 1859,
+      "n_closed": 1805,
+      "n_open": 54,
+      "median_hours": 40.0,
+      "mean_hours": 296.6,
+      "p90_hours": 1073.9
+    },
+    {
+      "neighborhood": "Marcy Holmes",
+      "n_cases": 4950,
+      "n_closed": 4902,
+      "n_open": 48,
+      "median_hours": 18.7,
+      "mean_hours": 121.3,
+      "p90_hours": 231.7
+    },
+    {
+      "neighborhood": "Folwell",
+      "n_cases": 3443,
+      "n_closed": 3430,
+      "n_open": 13,
+      "median_hours": 22.9,
+      "mean_hours": 75.2,
+      "p90_hours": 171.9
+    },
+    {
+      "neighborhood": "McKinley",
+      "n_cases": 2288,
+      "n_closed": 2278,
+      "n_open": 10,
+      "median_hours": 23.7,
+      "mean_hours": 78.9,
+      "p90_hours": 175.6
+    },
+    {
+      "neighborhood": "Camden Industrial",
+      "n_cases": 110,
+      "n_closed": 109,
+      "n_open": 1,
+      "median_hours": 8.9,
+      "mean_hours": 146.6,
+      "p90_hours": 161.5
+    },
+    {
+      "neighborhood": "Columbia Park",
+      "n_cases": 813,
+      "n_closed": 809,
+      "n_open": 4,
+      "median_hours": 24.2,
+      "mean_hours": 105.4,
+      "p90_hours": 193.0
+    },
+    {
+      "neighborhood": "Waite Park",
+      "n_cases": 1725,
+      "n_closed": 1716,
+      "n_open": 9,
+      "median_hours": 23.0,
+      "mean_hours": 99.7,
+      "p90_hours": 187.9
+    },
+    {
+      "neighborhood": "Marshall Terrace",
+      "n_cases": 938,
+      "n_closed": 933,
+      "n_open": 5,
+      "median_hours": 21.6,
+      "mean_hours": 72.6,
+      "p90_hours": 175.2
+    },
+    {
+      "neighborhood": "Whittier",
+      "n_cases": 8156,
+      "n_closed": 8107,
+      "n_open": 49,
+      "median_hours": 20.0,
+      "mean_hours": 108.4,
+      "p90_hours": 238.0
+    },
+    {
+      "neighborhood": "Lyndale",
+      "n_cases": 3624,
+      "n_closed": 3605,
+      "n_open": 19,
+      "median_hours": 24.3,
+      "mean_hours": 90.3,
+      "p90_hours": 192.0
+    },
+    {
+      "neighborhood": "East Bde Maka Ska",
+      "n_cases": 1547,
+      "n_closed": 1537,
+      "n_open": 10,
+      "median_hours": 20.9,
+      "mean_hours": 87.9,
+      "p90_hours": 196.3
+    },
+    {
+      "neighborhood": "West Maka Ska",
+      "n_cases": 574,
+      "n_closed": 567,
+      "n_open": 7,
+      "median_hours": 24.1,
+      "mean_hours": 90.6,
+      "p90_hours": 219.7
+    }
+  ],
+  "Unknown location": {
+    "n_cases": 49516,
+    "n_closed": 48812,
+    "n_open": 704,
+    "median_hours": 23.9,
+    "mean_hours": 141.6,
+    "p90_hours": 294.6
+  },
+  "Outside neighborhoods": {
+    "n_cases": 469,
+    "n_closed": 466,
+    "n_open": 3,
+    "median_hours": 18.0,
+    "mean_hours": 85.7,
+    "p90_hours": 201.6
+  }
+}
