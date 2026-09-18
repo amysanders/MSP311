@@ -26,6 +26,15 @@ Public 311 case exports for 2024, 2025, and 2026 (GeoJSON).
   all overall and by-type stats, but never plotted or joined to a
   neighborhood. The CSV is left as exported; the labeling happens in
   `scripts/build_aggregates.py`.
+- **Neighborhoods:** boundaries for the 87 official Minneapolis neighborhoods
+  come from the City's
+  [Minneapolis Neighborhoods](https://opendata.minneapolismn.gov/datasets/cityoflakes::minneapolis-neighborhoods/about)
+  dataset (CC0), downloaded as GeoJSON in lat/lon from its ArcGIS
+  FeatureServer (layer 0, downloaded 2026-09-18) to
+  `data/raw/neighborhoods.geojson`. Each located case is assigned to a
+  neighborhood with a point-in-polygon test in `build_aggregates.py`. Another
+  469 cases (0.19%) have real coordinates that fall inside no neighborhood
+  polygon; they're reported as "Outside neighborhoods" and not mapped.
 
 See `data/raw/minneapolis_311_2024_2026Q2.csv` for the cleaned dataset.
 Columns: `CASEID, TYPENAME, SUBJECTNAME, REASONNAME, CASESTATUS,
@@ -35,12 +44,13 @@ OPENEDDATETIME, CLOSEDDATETIME, LON, LAT, resolution_hours`.
 
 ```
 data/
-  raw/            cleaned, cutoff-filtered CSV (source of truth)
-  processed/      small JSON aggregates the frontend actually loads
+  raw/            cleaned, cutoff-filtered CSV (source of truth) and the
+                  neighborhood boundary GeoJSON
+  processed/      small JSON/GeoJSON files the frontend actually loads
 scripts/
-  build_aggregates.py   raw CSV -> data/processed/*.json
+  build_aggregates.py   raw data -> data/processed/*
 web/
-  index.html, style.css, app.js   the visualization itself
+  index.html, style.css, app.js   the visualization itself (Chart.js + Leaflet)
 ```
 
 ## Running it
@@ -64,9 +74,27 @@ python3 -m http.server 8000
 - There's a recurring seasonal slowdown each November/December
   (still-open rate for cases opened that month runs noticeably higher
   than the rest of the year) — worth investigating further.
+- By neighborhood, most medians are tightly bunched: the middle 60% of the
+  87 neighborhoods fall between about 20 and 25 hours. The extremes are
+  fastest **Near - North (3.2 h)** and slowest **Central (42.9 h)**.
+- **Neighborhood medians partly reflect request-type mix, not just
+  responsiveness.** 63% of Near - North's closed cases are "Animal Complaint -
+  Livability", a type that closes in about 2 hours city-wide; within that
+  neighborhood, per-type medians look like the city's. The map page says this
+  too.
+- Cases with no location (20%) have a median of 23.9 h, close to the overall
+  22.3 h, but a heavier tail (mean 141.6 h vs 111.7 h; 90th percentile
+  294.6 h vs 220.0 h). The map's medians aren't much affected by leaving them
+  out, but they aren't a random sample of slow cases either.
 
 ## Still to do
 
-- [ ] Join case LON/LAT to Minneapolis neighborhood boundaries
-- [ ] Build the by-neighborhood aggregate + map view
+- [x] Join case LON/LAT to Minneapolis neighborhood boundaries
+- [x] Build the by-neighborhood aggregate + map view
 - [ ] Write up the November/December seasonal pattern
+- [ ] Control for request-type mix on the neighborhood map (e.g. compare each
+      neighborhood's per-type medians to the city-wide medians)
+- [ ] Look into why Near - North has so many animal complaints (5,432) —
+      possibly cases geocoded to a single address
+- [ ] Shorten or wrap long request-type labels on the by-type chart at phone
+      widths

@@ -73,7 +73,59 @@ section h2 {
   font-size: 0.75rem;
 }
 
-.placeholder-note {
+.map-intro,
+.map-notes {
   color: var(--muted);
-  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.map-intro {
+  margin-top: 0;
+}
+
+#map {
+  height: 520px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* Mute the OSM basemap so the neighborhood shading is what reads. */
+.basemap-muted {
+  filter: grayscale(1) opacity(0.55);
+}
+
+#map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-swatch {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.legend-swatch.low-volume {
+  border: 1.5px dashed var(--muted);
+  background: transparent;
+}
+
+.map-tooltip strong {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.map-tooltip .low-volume-flag {
+  color: #a15c00;
 }
