@@ -9,9 +9,14 @@ Reads:  data/raw/minneapolis_311_2024_2026Q2.csv
 Writes: data/processed/by_type.json
         data/processed/overall.json
 
+Cases with no usable location (LON/LAT of 0.0) are labeled UNKNOWN_LOCATION
+rather than dropped or plotted at (0, 0).
+
 TODO (next step): once neighborhood boundary polygons are added, join each
 case's LON/LAT to a neighborhood and write data/processed/by_neighborhood.json
-using the same median-based approach as by_type.json.
+using the same median-based approach as by_type.json. Cases where
+location_of(row) is UNKNOWN_LOCATION should get their own "Unknown location"
+row there instead of being joined.
 """
 
 import csv
@@ -23,11 +28,25 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW_CSV = ROOT / "data" / "raw" / "minneapolis_311_2024_2026Q2.csv"
 OUT_DIR = ROOT / "data" / "processed"
 
+UNKNOWN_LOCATION = "Unknown location"
+
 
 def load_rows():
     with open(RAW_CSV, newline="") as f:
         reader = csv.DictReader(f)
         yield from reader
+
+
+def has_location(row):
+    """False for cases exported with placeholder 0.0 coordinates (~20% of rows)."""
+    return float(row["LON"]) != 0 and float(row["LAT"]) != 0
+
+
+def location_of(row):
+    """(lon, lat) for a located case, or UNKNOWN_LOCATION."""
+    if not has_location(row):
+        return UNKNOWN_LOCATION
+    return float(row["LON"]), float(row["LAT"])
 
 
 def build_by_type():
@@ -59,8 +78,11 @@ def build_overall():
     all_hours = []
     n_open = 0
     n_total = 0
+    n_unknown_location = 0
     for row in load_rows():
         n_total += 1
+        if location_of(row) == UNKNOWN_LOCATION:
+            n_unknown_location += 1
         rh = row["resolution_hours"]
         if rh:
             all_hours.append(float(rh))
@@ -78,6 +100,7 @@ def build_overall():
         "n_total_cases": n_total,
         "n_closed": n,
         "n_open": n_open,
+        "n_unknown_location": n_unknown_location,
         "median_hours": round(statistics.median(all_hours), 1),
         "mean_hours": round(statistics.mean(all_hours), 1),
         "p75_hours": pct(0.75),

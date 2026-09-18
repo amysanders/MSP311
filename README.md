@@ -21,6 +21,12 @@ Public 311 case exports for 2024, 2025, and 2026 (GeoJSON).
   artificially fast. At the June 2026 cutoff, only 0.81% of remaining
   cases are still open.
 
+- **Unknown locations:** 49,516 cases (~20%) have `LON`/`LAT` of exactly
+  `0.0` in the export. These are treated as **"Unknown location"** — kept in
+  all overall and by-type stats, but never plotted or joined to a
+  neighborhood. The CSV is left as exported; the labeling happens in
+  `scripts/build_aggregates.py`.
+
 See `data/raw/minneapolis_311_2024_2026Q2.csv` for the cleaned dataset.
 Columns: `CASEID, TYPENAME, SUBJECTNAME, REASONNAME, CASESTATUS,
 OPENEDDATETIME, CLOSEDDATETIME, LON, LAT, resolution_hours`.

@@ -2,6 +2,7 @@
   "n_total_cases": 245704,
   "n_closed": 243716,
   "n_open": 1988,
+  "n_unknown_location": 49516,
   "median_hours": 22.3,
   "mean_hours": 111.7,
   "p75_hours": 96.7,

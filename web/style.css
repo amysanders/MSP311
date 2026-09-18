@@ -63,6 +63,11 @@ section h2 {
   font-size: 0.85rem;
 }
 
+.stat .note {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
 .placeholder-note {
   color: var(--muted);
   font-style: italic;

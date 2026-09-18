@@ -11,10 +11,18 @@ function renderOverallStats(overall) {
     { label: "Total cases", value: overall.n_total_cases.toLocaleString() },
     { label: "90th percentile", value: `${(overall.p90_hours / 24).toFixed(1)} days` },
     { label: "Still open", value: overall.n_open.toLocaleString() },
+    {
+      label: "Unknown location",
+      value: overall.n_unknown_location.toLocaleString(),
+      note: `${((overall.n_unknown_location / overall.n_total_cases) * 100).toFixed(1)}% of cases`,
+    },
   ];
   el.innerHTML = stats
     .map(
-      (s) => `<div class="stat"><div class="value">${s.value}</div><div class="label">${s.label}</div></div>`
+      (s) =>
+        `<div class="stat"><div class="value">${s.value}</div><div class="label">${s.label}</div>` +
+        (s.note ? `<div class="note">${s.note}</div>` : "") +
+        `</div>`
     )
     .join("");
 }
