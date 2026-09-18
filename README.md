@@ -49,9 +49,10 @@ web/
 # 1. Regenerate the aggregates (only needed if data/raw changes)
 python3 scripts/build_aggregates.py
 
-# 2. Serve the web/ folder (fetch() needs http://, not file://)
-cd web && python3 -m http.server 8000
-# then open http://localhost:8000
+# 2. Serve the repo root (fetch() needs http://, not file://, and the page
+#    loads ../data/processed/*.json, so data/ must be inside the served folder)
+python3 -m http.server 8000
+# then open http://localhost:8000/web/
 ```
 
 ## Findings so far

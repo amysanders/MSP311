@@ -68,6 +68,6 @@ main().catch((err) => {
   console.error(err);
   document.body.insertAdjacentHTML(
     "beforeend",
-    `<p style="color:red">Error loading data: ${err.message}. Are you running this from a local server (not file://)?</p>`
+    `<p style="color:red">Error loading data: ${err.message}. Serve the repo root (not web/, not file://) and open /web/ — see README.</p>`
   );
 });
