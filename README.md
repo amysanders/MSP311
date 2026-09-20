@@ -7,7 +7,12 @@ and by location.
 ## Data
 
 Source: [City of Minneapolis Open Data Portal](https://opendata.minneapolismn.gov/),
-Public 311 case exports for 2024, 2025, and 2026 (GeoJSON).
+public 311 case data. The working file, `minneapolis_311_2023_2026_3yr.csv`,
+covers **36 months of cases: opened July 2023 – June 2026** (292,722 cases). It
+extends the earlier January 2024 – June 2026 extract by six months; for the
+245,704 cases in the overlap, every column is identical to that earlier file.
+
+Cleaning applied to the 2024 – June 2026 exports:
 
 - Merged the three yearly exports, normalizing two different date formats
   (ISO 8601 vs. RFC 822) found across files.
@@ -15,13 +20,17 @@ Public 311 case exports for 2024, 2025, and 2026 (GeoJSON).
   (cases opened in late 2024, re-exported once updated).
 - Computed `resolution_hours` = Closed Date Time − Opened Date Time for
   every closed case.
-- **Cutoff: cases opened January 2024 – June 2026 only.** Cases from
+
+The July–December 2023 cases (47,018) were added on 2026-09-20. I checked that
+they have the same columns and ISO timestamps, no duplicate case IDs, and no
+negative resolution times; I did not re-derive how they were cleaned.
+
+- **Cutoff: cases opened July 2023 – June 2026 only.** Cases from
   July–September 2026 were excluded because they hadn't had enough time
   to close yet — including them would make recent months look
-  artificially fast. At the June 2026 cutoff, only 0.81% of remaining
+  artificially fast. At the June 2026 cutoff, only 0.75% of remaining
   cases are still open.
-
-- **Unknown locations:** 49,516 cases (~20%) have `LON`/`LAT` of exactly
+- **Unknown locations:** 58,769 cases (~20%) have `LON`/`LAT` of exactly
   `0.0` in the export. These are treated as **"Unknown location"** — kept in
   all overall and by-type stats, but never plotted or joined to a
   neighborhood. The CSV is left as exported; the labeling happens in
@@ -33,10 +42,10 @@ Public 311 case exports for 2024, 2025, and 2026 (GeoJSON).
   FeatureServer (layer 0, downloaded 2026-09-18) to
   `data/raw/neighborhoods.geojson`. Each located case is assigned to a
   neighborhood with a point-in-polygon test in `build_aggregates.py`. Another
-  469 cases (0.19%) have real coordinates that fall inside no neighborhood
+  569 cases (0.19%) have real coordinates that fall inside no neighborhood
   polygon; they're reported as "Outside neighborhoods" and not mapped.
 
-See `data/raw/minneapolis_311_2024_2026Q2.csv` for the cleaned dataset.
+See `data/raw/minneapolis_311_2023_2026_3yr.csv` for the cleaned dataset.
 Columns: `CASEID, TYPENAME, SUBJECTNAME, REASONNAME, CASESTATUS,
 OPENEDDATETIME, CLOSEDDATETIME, LON, LAT, resolution_hours`.
 
@@ -67,24 +76,29 @@ python3 -m http.server 8000
 
 ## Findings so far
 
-- Median resolution time across all request types: **22.3 hours** (~0.9 days).
-- Mean is much higher (111.7 hours) — a long tail of slow-to-resolve
+- Median resolution time across all request types: **22.8 hours** (0.95 days; the
+  page's tile rounds this to 1.0 days).
+- Mean is much higher (117.4 hours) — a long tail of slow-to-resolve
   categories (e.g. abandoned vehicles, property complaints) pulls the
   average up. **Median is the more honest headline number.**
-- There's a recurring seasonal slowdown each November/December
-  (still-open rate for cases opened that month runs noticeably higher
-  than the rest of the year) — worth investigating further.
+- There's a seasonal slowdown each November/December: the share of cases
+  still open rises through the fall in all three years of data (Nov–Dec 2023:
+  0.6–1.0%; 2024: 4.7–5.5%; 2025: 1.7%, against about 0.1–0.8% in spring and
+  summer months). The size varies a lot from year to year, and older cases
+  have had longer to close, so the years aren't strictly comparable — worth
+  investigating further.
 - By neighborhood, most medians are tightly bunched: the middle 60% of the
   87 neighborhoods fall between about 20 and 25 hours. The extremes are
-  fastest **Near - North (3.2 h)** and slowest **Central (42.9 h)**.
+  fastest **Near - North (3.5 h)** and slowest **Nicollet Island - East Bank
+  (46.5 h)**.
 - **Neighborhood medians partly reflect request-type mix, not just
-  responsiveness.** 63% of Near - North's closed cases are "Animal Complaint -
+  responsiveness.** 62% of Near - North's closed cases are "Animal Complaint -
   Livability", a type that closes in about 2 hours city-wide; within that
   neighborhood, per-type medians look like the city's. The map page says this
   too.
-- Cases with no location (20%) have a median of 23.9 h, close to the overall
-  22.3 h, but a heavier tail (mean 141.6 h vs 111.7 h; 90th percentile
-  294.6 h vs 220.0 h). The map's medians aren't much affected by leaving them
+- Cases with no location (20%) have a median of 24.0 h, close to the overall
+  22.8 h, but a heavier tail (mean 142.6 h vs 117.4 h; 90th percentile
+  306.2 h vs 236.3 h). The map's medians aren't much affected by leaving them
   out, but they aren't a random sample of slow cases either.
 
 ## Still to do
@@ -94,7 +108,7 @@ python3 -m http.server 8000
 - [ ] Write up the November/December seasonal pattern
 - [ ] Control for request-type mix on the neighborhood map (e.g. compare each
       neighborhood's per-type medians to the city-wide medians)
-- [ ] Look into why Near - North has so many animal complaints (5,432) —
+- [ ] Look into why Near - North has so many animal complaints (6,142) —
       possibly cases geocoded to a single address
 - [ ] Shorten or wrap long request-type labels on the by-type chart at phone
       widths

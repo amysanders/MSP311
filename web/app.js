@@ -4,6 +4,16 @@ async function loadJSON(path) {
   return res.json();
 }
 
+function monthYear(isoDate) {
+  return new Date(`${isoDate}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+}
+
+function renderSubtitle(overall) {
+  document.getElementById("subtitle").textContent =
+    `Based on ${overall.n_total_cases.toLocaleString()} service requests opened ` +
+    `${monthYear(overall.first_opened)} – ${monthYear(overall.last_opened)}.`;
+}
+
 function renderOverallStats(overall) {
   const el = document.getElementById("overall-stats");
   const stats = [
@@ -165,6 +175,7 @@ async function main() {
     loadJSON("../data/processed/by_neighborhood.json"),
     loadJSON("../data/processed/neighborhoods.geojson"),
   ]);
+  renderSubtitle(overall);
   renderOverallStats(overall);
   renderTypeChart(byType);
   renderNeighborhoodMap(boundaries, byNeighborhood);
