@@ -1,9 +1,21 @@
 [
   {
     "type": "Police Mounted Patrol Request",
-    "n": 143,
-    "median_hours": 2731.5,
-    "mean_hours": 2630.0
+    "n": 160,
+    "median_hours": 2436.2,
+    "mean_hours": 2401.5
+  },
+  {
+    "type": "Frenz Property Settlement",
+    "n": 2,
+    "median_hours": 1414.9,
+    "mean_hours": 1414.9
+  },
+  {
+    "type": "Sidewalk Obstruction Complaint",
+    "n": 1,
+    "median_hours": 1052.8,
+    "mean_hours": 1052.8
   },
   {
     "type": "GIS Service Requests",
@@ -13,27 +25,21 @@
   },
   {
     "type": "Bicycle Lane Issue",
-    "n": 9,
-    "median_hours": 791.6,
-    "mean_hours": 794.4
+    "n": 15,
+    "median_hours": 789.0,
+    "mean_hours": 1035.0
   },
   {
     "type": "Commercial Disability Zone",
-    "n": 14,
+    "n": 16,
     "median_hours": 709.3,
-    "mean_hours": 842.4
+    "mean_hours": 793.0
   },
   {
     "type": "Residential Disability Zone",
-    "n": 212,
-    "median_hours": 608.6,
-    "mean_hours": 753.1
-  },
-  {
-    "type": "Street Light Trouble",
-    "n": 1,
-    "median_hours": 547.2,
-    "mean_hours": 547.2
+    "n": 265,
+    "median_hours": 549.5,
+    "mean_hours": 728.7
   },
   {
     "type": "Minimum Wage Inquiry",
@@ -43,15 +49,15 @@
   },
   {
     "type": "Street Light - New",
-    "n": 111,
-    "median_hours": 429.5,
-    "mean_hours": 736.4
+    "n": 159,
+    "median_hours": 445.3,
+    "mean_hours": 735.2
   },
   {
     "type": "Graffiti - Open311",
-    "n": 5839,
-    "median_hours": 382.7,
-    "mean_hours": 601.4
+    "n": 7007,
+    "median_hours": 437.2,
+    "mean_hours": 635.9
   },
   {
     "type": "Rental License Tier Review Request",
@@ -61,129 +67,153 @@
   },
   {
     "type": "Traffic Signal - New/Modification",
-    "n": 126,
-    "median_hours": 262.8,
-    "mean_hours": 779.6
+    "n": 154,
+    "median_hours": 307.6,
+    "mean_hours": 837.2
   },
   {
     "type": "Zoning Ordinance Complaint",
-    "n": 920,
-    "median_hours": 227.5,
-    "mean_hours": 426.1
+    "n": 1078,
+    "median_hours": 277.9,
+    "mean_hours": 476.7
   },
   {
     "type": "Regulatory Service Special Assessment",
-    "n": 278,
-    "median_hours": 216.1,
-    "mean_hours": 340.2
+    "n": 374,
+    "median_hours": 218.9,
+    "mean_hours": 333.3
   },
   {
     "type": "Sign Complaint",
-    "n": 250,
-    "median_hours": 193.4,
-    "mean_hours": 291.3
+    "n": 283,
+    "median_hours": 212.7,
+    "mean_hours": 330.5
+  },
+  {
+    "type": "Repair Notice Question",
+    "n": 429,
+    "median_hours": 186.3,
+    "mean_hours": 669.3
   },
   {
     "type": "Rental License Complaint",
-    "n": 64,
-    "median_hours": 192.7,
-    "mean_hours": 315.1
+    "n": 70,
+    "median_hours": 172.6,
+    "mean_hours": 294.7
   },
   {
     "type": "Rental License Followup",
-    "n": 7223,
-    "median_hours": 170.2,
-    "mean_hours": 212.1
-  },
-  {
-    "type": "Frenz Property Settlement",
-    "n": 1,
-    "median_hours": 164.1,
-    "mean_hours": 164.1
-  },
-  {
-    "type": "ADA Title II Coord Callback",
-    "n": 54,
-    "median_hours": 154.0,
-    "mean_hours": 343.0
-  },
-  {
-    "type": "Request Call from Sidewalk Inspector",
-    "n": 583,
-    "median_hours": 144.4,
-    "mean_hours": 307.4
+    "n": 8096,
+    "median_hours": 169.0,
+    "mean_hours": 204.5
   },
   {
     "type": "Sidewalk Structural Complaint",
-    "n": 1451,
-    "median_hours": 142.7,
-    "mean_hours": 246.6
+    "n": 1795,
+    "median_hours": 165.4,
+    "mean_hours": 397.0
+  },
+  {
+    "type": "Request Call from Sidewalk Inspector",
+    "n": 777,
+    "median_hours": 164.7,
+    "mean_hours": 428.1
+  },
+  {
+    "type": "Smoking Ban Violation Complaint",
+    "n": 2,
+    "median_hours": 160.8,
+    "mean_hours": 160.8
+  },
+  {
+    "type": "Neighborhood Parking Information",
+    "n": 20,
+    "median_hours": 154.9,
+    "mean_hours": 388.7
+  },
+  {
+    "type": "ADA Title II Coord Callback",
+    "n": 70,
+    "median_hours": 154.0,
+    "mean_hours": 360.4
   },
   {
     "type": "Sidewalk Snow & Sand Letter Question",
-    "n": 139,
-    "median_hours": 142.6,
-    "mean_hours": 267.3
+    "n": 144,
+    "median_hours": 143.4,
+    "mean_hours": 280.6
+  },
+  {
+    "type": "Certificate of Approval Request",
+    "n": 3,
+    "median_hours": 143.1,
+    "mean_hours": 118.1
+  },
+  {
+    "type": "Street Light Trouble",
+    "n": 3,
+    "median_hours": 142.3,
+    "mean_hours": 277.2
   },
   {
     "type": "Commercial Food Safety/Sanitation Complaint",
-    "n": 1334,
-    "median_hours": 129.5,
-    "mean_hours": 147.6
+    "n": 1552,
+    "median_hours": 124.7,
+    "mean_hours": 148.9
   },
   {
     "type": "Traffic - General Issue",
-    "n": 500,
+    "n": 575,
     "median_hours": 123.5,
-    "mean_hours": 207.8
-  },
-  {
-    "type": "Temporary Liquor License Callback Request",
-    "n": 2,
-    "median_hours": 123.5,
-    "mean_hours": 123.5
-  },
-  {
-    "type": "K9 Appearance Request",
-    "n": 147,
-    "median_hours": 122.5,
-    "mean_hours": 311.7
+    "mean_hours": 213.9
   },
   {
     "type": "Traffic Sign - Removal",
-    "n": 501,
-    "median_hours": 117.8,
-    "mean_hours": 235.2
-  },
-  {
-    "type": "Traffic Sign - New",
-    "n": 1097,
-    "median_hours": 114.9,
-    "mean_hours": 197.5
-  },
-  {
-    "type": "Fire Prevention Callback",
-    "n": 1251,
-    "median_hours": 113.1,
-    "mean_hours": 142.4
+    "n": 737,
+    "median_hours": 122.0,
+    "mean_hours": 235.1
   },
   {
     "type": "Rental License Tier Inquiry",
-    "n": 33,
-    "median_hours": 107.4,
-    "mean_hours": 127.0
+    "n": 38,
+    "median_hours": 120.5,
+    "mean_hours": 207.3
+  },
+  {
+    "type": "K9 Appearance Request",
+    "n": 167,
+    "median_hours": 118.0,
+    "mean_hours": 283.5
+  },
+  {
+    "type": "Traffic Sign - New",
+    "n": 1317,
+    "median_hours": 117.1,
+    "mean_hours": 211.9
+  },
+  {
+    "type": "Suspicious Activity",
+    "n": 3873,
+    "median_hours": 116.3,
+    "mean_hours": 156.9
+  },
+  {
+    "type": "Pothole",
+    "n": 5735,
+    "median_hours": 115.7,
+    "mean_hours": 262.4
   },
   {
     "type": "Pothole - Open311",
-    "n": 2209,
-    "median_hours": 106.8,
-    "mean_hours": 261.6
+    "n": 2524,
+    "median_hours": 113.4,
+    "mean_hours": 268.8
   },
   {
     "type": "Abandoned Vehicle",
-    "n": 17170,
-    "median_hours": 105.0,
-    "mean_hours": 114.4
+    "n": 20463,
+    "median_hours": 105.3,
+    "mean_hours": 117.2
   },
   {
     "type": "Snow - Illegal Dumping Residential",
@@ -192,172 +222,184 @@
     "mean_hours": 135.5
   },
   {
-    "type": "Suspicious Activity",
-    "n": 3222,
-    "median_hours": 102.2,
-    "mean_hours": 157.4
+    "type": "Permanent Liquor License Application Request",
+    "n": 2,
+    "median_hours": 103.0,
+    "mean_hours": 103.0
   },
   {
-    "type": "Pothole",
-    "n": 4817,
-    "median_hours": 99.8,
-    "mean_hours": 253.2
+    "type": "Request Callback - Setback/Height Requirements",
+    "n": 169,
+    "median_hours": 101.9,
+    "mean_hours": 101.6
   },
   {
     "type": "Mural/Sign Callback Request",
-    "n": 82,
-    "median_hours": 95.0,
-    "mean_hours": 94.4
-  },
-  {
-    "type": "Business License Application Request",
-    "n": 1,
-    "median_hours": 94.9,
-    "mean_hours": 94.9
-  },
-  {
-    "type": "Repair Notice Question",
-    "n": 338,
-    "median_hours": 94.8,
-    "mean_hours": 259.4
-  },
-  {
-    "type": "Residential Conditions Complaint Tenant",
-    "n": 1182,
-    "median_hours": 93.5,
-    "mean_hours": 143.5
-  },
-  {
-    "type": "Sewer Callback",
-    "n": 94,
-    "median_hours": 93.1,
-    "mean_hours": 113.4
-  },
-  {
-    "type": "Sewer Issues",
-    "n": 2869,
-    "median_hours": 93.0,
-    "mean_hours": 102.8
-  },
-  {
-    "type": "Air Pollution Complaint",
-    "n": 438,
-    "median_hours": 92.7,
-    "mean_hours": 119.6
-  },
-  {
-    "type": "Pollution Control Annual Registration - PCAR",
-    "n": 1598,
-    "median_hours": 91.4,
-    "mean_hours": 114.6
+    "n": 137,
+    "median_hours": 101.6,
+    "mean_hours": 96.3
   },
   {
     "type": "Sidewalk Structural - Open311",
-    "n": 1206,
-    "median_hours": 88.4,
-    "mean_hours": 161.4
+    "n": 1507,
+    "median_hours": 97.9,
+    "mean_hours": 280.5
   },
   {
-    "type": "Abandoned Vehicle - Open311",
-    "n": 3110,
-    "median_hours": 86.1,
-    "mean_hours": 98.9
+    "type": "Request Callback - Zoning Classification",
+    "n": 94,
+    "median_hours": 95.8,
+    "mean_hours": 92.7
   },
   {
-    "type": "Housing Order Inquiry",
-    "n": 426,
-    "median_hours": 85.9,
-    "mean_hours": 137.6
+    "type": "Request Meeting with a Planner",
+    "n": 13,
+    "median_hours": 95.7,
+    "mean_hours": 118.3
   },
   {
-    "type": "Certificate of Approval Request",
-    "n": 2,
-    "median_hours": 81.7,
-    "mean_hours": 81.7
+    "type": "Sewer Issues",
+    "n": 3467,
+    "median_hours": 94.3,
+    "mean_hours": 107.1
   },
   {
-    "type": "Noise Pollution Complaint",
-    "n": 1126,
-    "median_hours": 77.0,
-    "mean_hours": 105.7
+    "type": "Residential Conditions Complaint Tenant",
+    "n": 1419,
+    "median_hours": 93.2,
+    "mean_hours": 142.8
   },
   {
-    "type": "Sidewalk Snow and Ice - SS City",
-    "n": 1450,
-    "median_hours": 76.9,
-    "mean_hours": 81.0
+    "type": "Sewer Callback",
+    "n": 122,
+    "median_hours": 93.1,
+    "mean_hours": 108.4
   },
   {
-    "type": "Land Pollution Complaint",
-    "n": 545,
-    "median_hours": 74.2,
-    "mean_hours": 112.3
-  },
-  {
-    "type": "Neighborhood Parking Information",
-    "n": 9,
-    "median_hours": 73.2,
-    "mean_hours": 227.8
-  },
-  {
-    "type": "Commercial/Mixed Conditions Complaint",
-    "n": 873,
-    "median_hours": 71.4,
-    "mean_hours": 150.5
-  },
-  {
-    "type": "Fire Report Records Request",
-    "n": 475,
-    "median_hours": 69.2,
-    "mean_hours": 137.0
+    "type": "Air Pollution Complaint",
+    "n": 537,
+    "median_hours": 92.8,
+    "mean_hours": 116.4
   },
   {
     "type": "Pedestrian Complaint",
-    "n": 10,
-    "median_hours": 69.1,
-    "mean_hours": 206.0
+    "n": 13,
+    "median_hours": 91.8,
+    "mean_hours": 332.5
   },
   {
-    "type": "Street Light Outage",
-    "n": 2439,
-    "median_hours": 69.0,
-    "mean_hours": 671.4
+    "type": "Fire Prevention Callback",
+    "n": 1931,
+    "median_hours": 91.6,
+    "mean_hours": 124.8
   },
   {
-    "type": "Fence or Guardrail Maintenance",
-    "n": 48,
-    "median_hours": 68.3,
-    "mean_hours": 180.3
+    "type": "Pollution Control Annual Registration - PCAR",
+    "n": 1702,
+    "median_hours": 89.6,
+    "mean_hours": 113.7
   },
   {
-    "type": "RHOD Tenant Conditions Complaint",
-    "n": 3385,
-    "median_hours": 65.8,
-    "mean_hours": 105.7
+    "type": "Abandoned Vehicle - Open311",
+    "n": 3750,
+    "median_hours": 89.5,
+    "mean_hours": 102.2
   },
   {
-    "type": "Fire Rig Visit Request",
-    "n": 603,
-    "median_hours": 64.0,
-    "mean_hours": 104.8
+    "type": "Sidewalk Snow and Ice - SS City",
+    "n": 1451,
+    "median_hours": 76.8,
+    "mean_hours": 80.9
   },
   {
-    "type": "Street Light Wreck/Damage",
-    "n": 377,
-    "median_hours": 63.6,
-    "mean_hours": 449.7
-  },
-  {
-    "type": "Traffic Signal Timing Issue",
-    "n": 736,
-    "median_hours": 62.5,
-    "mean_hours": 201.1
+    "type": "Housing Order Inquiry",
+    "n": 516,
+    "median_hours": 75.9,
+    "mean_hours": 133.9
   },
   {
     "type": "Lead Inquiry",
-    "n": 204,
-    "median_hours": 57.1,
-    "mean_hours": 127.3
+    "n": 249,
+    "median_hours": 75.6,
+    "mean_hours": 225.2
+  },
+  {
+    "type": "Street Light Outage",
+    "n": 3217,
+    "median_hours": 75.2,
+    "mean_hours": 671.8
+  },
+  {
+    "type": "Noise Pollution Complaint",
+    "n": 1431,
+    "median_hours": 74.6,
+    "mean_hours": 100.8
+  },
+  {
+    "type": "Land Pollution Complaint",
+    "n": 708,
+    "median_hours": 74.3,
+    "mean_hours": 107.8
+  },
+  {
+    "type": "Commercial/Mixed Conditions Complaint",
+    "n": 1009,
+    "median_hours": 73.1,
+    "mean_hours": 152.8
+  },
+  {
+    "type": "Fence or Guardrail Maintenance",
+    "n": 69,
+    "median_hours": 71.4,
+    "mean_hours": 284.0
+  },
+  {
+    "type": "General Street Complaint",
+    "n": 773,
+    "median_hours": 68.1,
+    "mean_hours": 172.3
+  },
+  {
+    "type": "Fire Report Records Request",
+    "n": 529,
+    "median_hours": 67.0,
+    "mean_hours": 132.1
+  },
+  {
+    "type": "Traffic Signal Timing Issue",
+    "n": 851,
+    "median_hours": 66.6,
+    "mean_hours": 239.2
+  },
+  {
+    "type": "Street Light Wreck/Damage",
+    "n": 475,
+    "median_hours": 66.1,
+    "mean_hours": 448.1
+  },
+  {
+    "type": "RHOD Tenant Conditions Complaint",
+    "n": 3931,
+    "median_hours": 65.8,
+    "mean_hours": 105.8
+  },
+  {
+    "type": "Bridge Complaint",
+    "n": 30,
+    "median_hours": 64.3,
+    "mean_hours": 90.7
+  },
+  {
+    "type": "Permit Addition Refund",
+    "n": 4,
+    "median_hours": 60.0,
+    "mean_hours": 55.7
+  },
+  {
+    "type": "Water Pollution Complaint",
+    "n": 40,
+    "median_hours": 57.2,
+    "mean_hours": 172.8
   },
   {
     "type": "Snow - Illegal Dumping",
@@ -366,544 +408,568 @@
     "mean_hours": 70.1
   },
   {
-    "type": "Bridge Complaint",
-    "n": 26,
-    "median_hours": 54.6,
-    "mean_hours": 83.8
-  },
-  {
-    "type": "Residential Conditions Complaint",
-    "n": 4399,
-    "median_hours": 50.5,
-    "mean_hours": 98.0
-  },
-  {
-    "type": "Permit Addition Refund",
-    "n": 2,
-    "median_hours": 50.4,
-    "mean_hours": 50.4
-  },
-  {
-    "type": "General Street Complaint",
-    "n": 484,
-    "median_hours": 49.8,
-    "mean_hours": 147.9
-  },
-  {
-    "type": "Exterior Nuisance - Self Service",
-    "n": 3322,
-    "median_hours": 49.4,
-    "mean_hours": 70.1
-  },
-  {
-    "type": "Env Mgmt Callback Request",
-    "n": 323,
-    "median_hours": 48.8,
-    "mean_hours": 91.6
-  },
-  {
-    "type": "Exterior Nuisance Complaint",
-    "n": 13699,
-    "median_hours": 48.3,
-    "mean_hours": 76.2
+    "type": "Fire Rig Visit Request",
+    "n": 723,
+    "median_hours": 55.6,
+    "mean_hours": 100.8
   },
   {
     "type": "Licensing Complaint",
-    "n": 1632,
-    "median_hours": 47.8,
-    "mean_hours": 111.5
+    "n": 2126,
+    "median_hours": 50.5,
+    "mean_hours": 113.7
   },
   {
-    "type": "Water Pollution Complaint",
-    "n": 32,
-    "median_hours": 47.4,
-    "mean_hours": 175.6
+    "type": "Residential Conditions Complaint",
+    "n": 5301,
+    "median_hours": 49.8,
+    "mean_hours": 94.9
+  },
+  {
+    "type": "Exterior Nuisance - Self Service",
+    "n": 4024,
+    "median_hours": 48.6,
+    "mean_hours": 68.2
+  },
+  {
+    "type": "Env Mgmt Callback Request",
+    "n": 375,
+    "median_hours": 48.5,
+    "mean_hours": 87.1
+  },
+  {
+    "type": "Business License Application Request",
+    "n": 2,
+    "median_hours": 48.5,
+    "mean_hours": 48.5
   },
   {
     "type": "Food Safety Callback",
-    "n": 856,
-    "median_hours": 46.8,
-    "mean_hours": 69.1
+    "n": 972,
+    "median_hours": 47.2,
+    "mean_hours": 68.7
   },
   {
-    "type": "Dumpster and Storage Container Complaint",
-    "n": 256,
-    "median_hours": 43.5,
-    "mean_hours": 145.5
-  },
-  {
-    "type": "RHOD Conditions Complaint",
-    "n": 934,
-    "median_hours": 43.3,
-    "mean_hours": 72.9
-  },
-  {
-    "type": "Water Quality Issues",
-    "n": 417,
-    "median_hours": 42.1,
-    "mean_hours": 46.5
-  },
-  {
-    "type": "Certificate of Code Compliance Request",
-    "n": 63,
-    "median_hours": 42.1,
-    "mean_hours": 69.1
+    "type": "Exterior Nuisance Complaint",
+    "n": 16181,
+    "median_hours": 46.7,
+    "mean_hours": 72.6
   },
   {
     "type": "Traffic Signal Timing - Open311",
-    "n": 184,
-    "median_hours": 40.9,
-    "mean_hours": 197.7
-  },
-  {
-    "type": "Duplicate Water Bill Request",
-    "n": 2,
-    "median_hours": 40.0,
-    "mean_hours": 40.0
+    "n": 227,
+    "median_hours": 45.5,
+    "mean_hours": 270.8
   },
   {
     "type": "Emergency Pollution Complaint",
-    "n": 44,
-    "median_hours": 34.4,
-    "mean_hours": 53.5
+    "n": 52,
+    "median_hours": 45.2,
+    "mean_hours": 54.4
   },
   {
-    "type": "Homeless Encampment",
-    "n": 5550,
-    "median_hours": 32.8,
-    "mean_hours": 76.7
-  },
-  {
-    "type": "Grass & Weed Complaint",
-    "n": 306,
-    "median_hours": 29.9,
-    "mean_hours": 66.3
-  },
-  {
-    "type": "CCS Supervisor Complaint",
-    "n": 9,
-    "median_hours": 29.3,
-    "mean_hours": 56.9
-  },
-  {
-    "type": "Bike Trail Safety Phone - Open 311",
-    "n": 27,
-    "median_hours": 27.3,
-    "mean_hours": 50.6
-  },
-  {
-    "type": "Abandoned/Illegally Parked Bicycle",
-    "n": 493,
-    "median_hours": 27.1,
-    "mean_hours": 43.6
-  },
-  {
-    "type": "Sidewalk Snow Ice - Open311",
-    "n": 4159,
-    "median_hours": 27.1,
-    "mean_hours": 62.1
-  },
-  {
-    "type": "Solid Waste Overflowing Litter - Open311",
-    "n": 1587,
-    "median_hours": 27.0,
-    "mean_hours": 105.1
-  },
-  {
-    "type": "Parking Meter - Open311",
-    "n": 84,
-    "median_hours": 26.5,
-    "mean_hours": 102.7
-  },
-  {
-    "type": "Water Service Turn On",
-    "n": 3,
-    "median_hours": 26.5,
-    "mean_hours": 31.1
-  },
-  {
-    "type": "FIRE Commercial Exterior Nuisance",
-    "n": 832,
-    "median_hours": 26.2,
-    "mean_hours": 56.8
-  },
-  {
-    "type": "Change Request - Mailing Address or Name",
-    "n": 9,
-    "median_hours": 24.7,
-    "mean_hours": 32.9
-  },
-  {
-    "type": "Traffic Sign Repair - Open311",
-    "n": 1538,
-    "median_hours": 24.5,
-    "mean_hours": 112.2
-  },
-  {
-    "type": "Parking Meter Problem",
-    "n": 11,
-    "median_hours": 24.5,
-    "mean_hours": 64.2
-  },
-  {
-    "type": "Illegal Dumping Complaint",
-    "n": 2374,
-    "median_hours": 24.4,
-    "mean_hours": 61.3
-  },
-  {
-    "type": "RHOD Exterior Nuisance Complaint",
-    "n": 1068,
-    "median_hours": 24.0,
-    "mean_hours": 47.8
-  },
-  {
-    "type": "False Burglar Alarm",
-    "n": 34,
-    "median_hours": 23.7,
-    "mean_hours": 80.5
-  },
-  {
-    "type": "Solid Waste Overflow Litter",
-    "n": 412,
-    "median_hours": 23.5,
-    "mean_hours": 156.3
-  },
-  {
-    "type": "Utility Billing General Inquiry",
-    "n": 115,
-    "median_hours": 23.2,
-    "mean_hours": 44.0
-  },
-  {
-    "type": "Sidewalk Snow and Ice - SS",
-    "n": 3578,
-    "median_hours": 22.7,
-    "mean_hours": 60.8
-  },
-  {
-    "type": "Sidewalk Snow & Ice Complaint",
-    "n": 2766,
-    "median_hours": 22.6,
-    "mean_hours": 54.2
-  },
-  {
-    "type": "Chemical Spill",
-    "n": 89,
-    "median_hours": 22.6,
-    "mean_hours": 46.2
-  },
-  {
-    "type": "Street Light Wreck - Open311",
-    "n": 197,
-    "median_hours": 22.5,
-    "mean_hours": 294.4
+    "type": "Water Quality Issues",
+    "n": 529,
+    "median_hours": 44.2,
+    "mean_hours": 48.7
   },
   {
     "type": "Sport Equip in Street",
+    "n": 14,
+    "median_hours": 43.9,
+    "mean_hours": 83.9
+  },
+  {
+    "type": "RHOD Conditions Complaint",
+    "n": 1091,
+    "median_hours": 43.6,
+    "mean_hours": 74.3
+  },
+  {
+    "type": "Certificate of Code Compliance Request",
+    "n": 69,
+    "median_hours": 42.7,
+    "mean_hours": 68.2
+  },
+  {
+    "type": "Water Service Turn On",
+    "n": 10,
+    "median_hours": 38.3,
+    "mean_hours": 45.5
+  },
+  {
+    "type": "Dumpster and Storage Container Complaint",
+    "n": 336,
+    "median_hours": 38.0,
+    "mean_hours": 125.0
+  },
+  {
+    "type": "Temporary Liquor License Callback Request",
     "n": 6,
-    "median_hours": 22.3,
-    "mean_hours": 46.6
+    "median_hours": 35.5,
+    "mean_hours": 67.5
   },
   {
-    "type": "Commercial Structure Unsound",
-    "n": 2,
-    "median_hours": 22.3,
-    "mean_hours": 22.3
+    "type": "Homeless Encampment",
+    "n": 7208,
+    "median_hours": 33.7,
+    "mean_hours": 76.0
   },
   {
-    "type": "Special Sweep",
-    "n": 1454,
-    "median_hours": 22.2,
-    "mean_hours": 41.9
+    "type": "CCS Supervisor Complaint",
+    "n": 14,
+    "median_hours": 29.4,
+    "mean_hours": 55.6
   },
   {
-    "type": "Street Light Outage - Open311",
-    "n": 1182,
-    "median_hours": 21.5,
-    "mean_hours": 366.9
+    "type": "Grass & Weed Complaint",
+    "n": 372,
+    "median_hours": 29.2,
+    "mean_hours": 70.5
   },
   {
-    "type": "Meter Reading / Service Appointment",
-    "n": 12,
-    "median_hours": 21.5,
-    "mean_hours": 23.4
+    "type": "Solid Waste Overflowing Litter - Open311",
+    "n": 2060,
+    "median_hours": 28.7,
+    "mean_hours": 100.7
+  },
+  {
+    "type": "FIRE Commercial Exterior Nuisance",
+    "n": 1166,
+    "median_hours": 27.7,
+    "mean_hours": 59.2
+  },
+  {
+    "type": "Sidewalk Snow Ice - Open311",
+    "n": 4175,
+    "median_hours": 27.2,
+    "mean_hours": 62.2
+  },
+  {
+    "type": "Bike Trail Safety Phone - Open 311",
+    "n": 30,
+    "median_hours": 26.9,
+    "mean_hours": 49.2
+  },
+  {
+    "type": "Parking Meter - Open311",
+    "n": 96,
+    "median_hours": 26.2,
+    "mean_hours": 95.1
+  },
+  {
+    "type": "False Burglar Alarm",
+    "n": 40,
+    "median_hours": 25.6,
+    "mean_hours": 75.7
+  },
+  {
+    "type": "Traffic Sign Repair - Open311",
+    "n": 1814,
+    "median_hours": 25.4,
+    "mean_hours": 107.5
+  },
+  {
+    "type": "Abandoned/Illegally Parked Bicycle",
+    "n": 584,
+    "median_hours": 25.3,
+    "mean_hours": 39.6
+  },
+  {
+    "type": "RHOD Exterior Nuisance Complaint",
+    "n": 1509,
+    "median_hours": 24.9,
+    "mean_hours": 50.8
+  },
+  {
+    "type": "Parking Meter Problem",
+    "n": 15,
+    "median_hours": 24.5,
+    "mean_hours": 51.1
+  },
+  {
+    "type": "Illegal Dumping Complaint",
+    "n": 2880,
+    "median_hours": 24.3,
+    "mean_hours": 59.9
+  },
+  {
+    "type": "Chemical Spill",
+    "n": 119,
+    "median_hours": 24.3,
+    "mean_hours": 46.7
   },
   {
     "type": "Unpermitted Work",
-    "n": 463,
-    "median_hours": 21.3,
-    "mean_hours": 63.6
+    "n": 583,
+    "median_hours": 24.2,
+    "mean_hours": 72.2
   },
   {
-    "type": "PPU Callback",
-    "n": 505,
-    "median_hours": 21.1,
-    "mean_hours": 37.6
-  },
-  {
-    "type": "Utility Connection Permit Inquiry",
-    "n": 236,
-    "median_hours": 21.0,
-    "mean_hours": 60.8
-  },
-  {
-    "type": "Utility Cut Inquiry",
-    "n": 1439,
-    "median_hours": 21.0,
-    "mean_hours": 93.3
-  },
-  {
-    "type": "Permanent Liquor License Callback Request",
-    "n": 125,
-    "median_hours": 20.8,
-    "mean_hours": 48.1
-  },
-  {
-    "type": "Start Utility Service - Move In / Buy Property",
-    "n": 27,
-    "median_hours": 20.7,
-    "mean_hours": 31.9
-  },
-  {
-    "type": "Barricade Pickup / Placement",
-    "n": 447,
-    "median_hours": 20.7,
-    "mean_hours": 41.5
+    "type": "Solid Waste Overflow Litter",
+    "n": 562,
+    "median_hours": 23.8,
+    "mean_hours": 128.0
   },
   {
     "type": "Permitted Work",
-    "n": 332,
-    "median_hours": 20.7,
-    "mean_hours": 53.5
-  },
-  {
-    "type": "E-bill Registration Request",
-    "n": 2,
-    "median_hours": 20.0,
-    "mean_hours": 20.0
-  },
-  {
-    "type": "Traffic Sign - Repair",
-    "n": 2121,
-    "median_hours": 19.9,
-    "mean_hours": 90.1
-  },
-  {
-    "type": "Debris in the Street or Alley",
-    "n": 3300,
-    "median_hours": 19.6,
-    "mean_hours": 31.2
+    "n": 448,
+    "median_hours": 23.5,
+    "mean_hours": 70.8
   },
   {
     "type": "Sand Barrel",
-    "n": 7,
-    "median_hours": 19.6,
-    "mean_hours": 44.6
+    "n": 21,
+    "median_hours": 23.2,
+    "mean_hours": 63.1
   },
   {
-    "type": "Full TISH Report Request",
-    "n": 2,
-    "median_hours": 19.6,
-    "mean_hours": 19.6
+    "type": "Street Light Outage - Open311",
+    "n": 1532,
+    "median_hours": 22.9,
+    "mean_hours": 393.4
   },
   {
-    "type": "Traffic Signal Trouble - Open311",
-    "n": 729,
-    "median_hours": 19.5,
-    "mean_hours": 63.5
+    "type": "Street Light Wreck - Open311",
+    "n": 233,
+    "median_hours": 22.9,
+    "mean_hours": 284.7
   },
   {
-    "type": "Unpermitted Work - Self Service",
-    "n": 221,
-    "median_hours": 19.2,
-    "mean_hours": 37.9
+    "type": "Sidewalk Snow and Ice - SS",
+    "n": 3588,
+    "median_hours": 22.8,
+    "mean_hours": 63.1
   },
   {
-    "type": "Development Coordinator",
-    "n": 1666,
-    "median_hours": 19.1,
-    "mean_hours": 31.4
-  },
-  {
-    "type": "Speed Wagon",
-    "n": 70,
-    "median_hours": 19.0,
-    "mean_hours": 51.5
-  },
-  {
-    "type": "Graffiti complaint / reporting",
-    "n": 11330,
-    "median_hours": 18.7,
-    "mean_hours": 338.0
-  },
-  {
-    "type": "Snow & Ice Complaint",
-    "n": 3415,
-    "median_hours": 18.7,
+    "type": "Change Request - Mailing Address or Name",
+    "n": 15,
+    "median_hours": 22.8,
     "mean_hours": 35.8
   },
   {
-    "type": "Permit Issuance",
-    "n": 11,
-    "median_hours": 18.6,
-    "mean_hours": 26.6
+    "type": "Sidewalk Snow & Ice Complaint",
+    "n": 2773,
+    "median_hours": 22.7,
+    "mean_hours": 55.1
   },
   {
-    "type": "Permit Question Callback",
-    "n": 1222,
-    "median_hours": 18.5,
-    "mean_hours": 29.1
+    "type": "Special Sweep",
+    "n": 1811,
+    "median_hours": 22.5,
+    "mean_hours": 43.0
+  },
+  {
+    "type": "Utility Billing General Inquiry",
+    "n": 147,
+    "median_hours": 22.1,
+    "mean_hours": 40.0
   },
   {
     "type": "Stop Utility Service - Move Out / Sell Property",
-    "n": 8,
-    "median_hours": 18.4,
-    "mean_hours": 24.6
+    "n": 64,
+    "median_hours": 22.0,
+    "mean_hours": 31.9
   },
   {
-    "type": "Business License Callback Request",
-    "n": 1103,
-    "median_hours": 18.3,
-    "mean_hours": 48.4
+    "type": "Request Application - Rebuild / Flood Plain Letter",
+    "n": 7,
+    "median_hours": 21.6,
+    "mean_hours": 51.9
   },
   {
-    "type": "Permit Problem",
-    "n": 657,
-    "median_hours": 17.4,
-    "mean_hours": 25.5
+    "type": "Duplicate Water Bill Request",
+    "n": 3,
+    "median_hours": 21.6,
+    "mean_hours": 33.8
   },
   {
-    "type": "CCS Supervisor Callback",
-    "n": 631,
-    "median_hours": 17.4,
-    "mean_hours": 29.1
+    "type": "Unpermitted Work - Self Service",
+    "n": 272,
+    "median_hours": 21.3,
+    "mean_hours": 55.6
   },
   {
-    "type": "Construction Plan Request",
-    "n": 115,
-    "median_hours": 17.4,
-    "mean_hours": 31.2
+    "type": "Barricade Pickup / Placement",
+    "n": 612,
+    "median_hours": 21.3,
+    "mean_hours": 46.9
   },
   {
-    "type": "Permit Status Request",
-    "n": 2156,
-    "median_hours": 16.9,
-    "mean_hours": 23.1
+    "type": "Utility Connection Permit Inquiry",
+    "n": 289,
+    "median_hours": 21.1,
+    "mean_hours": 60.4
   },
   {
-    "type": "TISH Callback",
-    "n": 401,
-    "median_hours": 16.9,
-    "mean_hours": 28.1
+    "type": "Meter Reading / Service Appointment",
+    "n": 38,
+    "median_hours": 21.0,
+    "mean_hours": 29.7
   },
   {
-    "type": "Certificate of Occupancy Request",
-    "n": 156,
-    "median_hours": 16.8,
-    "mean_hours": 20.3
+    "type": "PPU Callback",
+    "n": 574,
+    "median_hours": 21.0,
+    "mean_hours": 36.6
   },
   {
-    "type": "Records Management Specialist",
-    "n": 221,
-    "median_hours": 16.0,
-    "mean_hours": 29.6
+    "type": "Utility Cut Inquiry",
+    "n": 1776,
+    "median_hours": 20.9,
+    "mean_hours": 86.1
   },
   {
-    "type": "Traffic Signal Trouble",
-    "n": 2460,
-    "median_hours": 15.9,
-    "mean_hours": 47.8
-  },
-  {
-    "type": "Water Service Issue",
-    "n": 1581,
-    "median_hours": 15.3,
-    "mean_hours": 19.7
-  },
-  {
-    "type": "Property Management Complaint",
-    "n": 749,
-    "median_hours": 13.6,
-    "mean_hours": 42.0
-  },
-  {
-    "type": "Trees Down",
-    "n": 888,
-    "median_hours": 12.6,
-    "mean_hours": 17.6
+    "type": "Start Utility Service - Move In / Buy Property",
+    "n": 112,
+    "median_hours": 20.9,
+    "mean_hours": 30.2
   },
   {
     "type": "Stop & Start Utility Service - Move Out / In",
-    "n": 2,
-    "median_hours": 10.4,
-    "mean_hours": 10.4
+    "n": 4,
+    "median_hours": 20.3,
+    "mean_hours": 20.9
   },
   {
-    "type": "Hydrant Issue",
-    "n": 404,
-    "median_hours": 6.5,
-    "mean_hours": 19.7
+    "type": "Traffic Signal Trouble - Open311",
+    "n": 897,
+    "median_hours": 20.1,
+    "mean_hours": 83.3
+  },
+  {
+    "type": "Permanent Liquor License Callback Request",
+    "n": 151,
+    "median_hours": 20.1,
+    "mean_hours": 48.7
+  },
+  {
+    "type": "Debris in the Street or Alley",
+    "n": 3952,
+    "median_hours": 20.0,
+    "mean_hours": 33.8
+  },
+  {
+    "type": "Speed Wagon",
+    "n": 82,
+    "median_hours": 20.0,
+    "mean_hours": 59.9
+  },
+  {
+    "type": "E-bill Registration Request",
+    "n": 3,
+    "median_hours": 20.0,
+    "mean_hours": 45.1
+  },
+  {
+    "type": "Traffic Sign - Repair",
+    "n": 2560,
+    "median_hours": 19.7,
+    "mean_hours": 84.3
+  },
+  {
+    "type": "Development Coordinator",
+    "n": 2020,
+    "median_hours": 19.3,
+    "mean_hours": 33.2
+  },
+  {
+    "type": "CCS Supervisor Callback",
+    "n": 837,
+    "median_hours": 19.2,
+    "mean_hours": 34.8
   },
   {
     "type": "Regulated Backflow Assembly",
-    "n": 156,
-    "median_hours": 6.1,
-    "mean_hours": 22.9
+    "n": 223,
+    "median_hours": 19.1,
+    "mean_hours": 25.1
   },
   {
-    "type": "Plan Review Callback",
-    "n": 5013,
-    "median_hours": 5.2,
-    "mean_hours": 31.6
+    "type": "Permit Question Callback",
+    "n": 1609,
+    "median_hours": 19.0,
+    "mean_hours": 30.4
   },
   {
-    "type": "Inoperable Vehicle Complaint",
-    "n": 514,
-    "median_hours": 4.6,
-    "mean_hours": 41.6
+    "type": "Commercial Structure Unsound",
+    "n": 5,
+    "median_hours": 18.9,
+    "mean_hours": 14.6
+  },
+  {
+    "type": "Snow & Ice Complaint",
+    "n": 3473,
+    "median_hours": 18.7,
+    "mean_hours": 35.5
+  },
+  {
+    "type": "Full TISH Report Request",
+    "n": 5,
+    "median_hours": 18.4,
+    "mean_hours": 26.9
+  },
+  {
+    "type": "Business License Callback Request",
+    "n": 1319,
+    "median_hours": 18.3,
+    "mean_hours": 48.3
+  },
+  {
+    "type": "Permit Problem",
+    "n": 804,
+    "median_hours": 17.8,
+    "mean_hours": 26.1
+  },
+  {
+    "type": "Water Service Turn Off",
+    "n": 7,
+    "median_hours": 17.5,
+    "mean_hours": 18.2
+  },
+  {
+    "type": "Graffiti complaint / reporting",
+    "n": 13682,
+    "median_hours": 16.9,
+    "mean_hours": 334.5
+  },
+  {
+    "type": "Permit Status Request",
+    "n": 2679,
+    "median_hours": 16.8,
+    "mean_hours": 24.1
+  },
+  {
+    "type": "Construction Plan Request",
+    "n": 142,
+    "median_hours": 16.6,
+    "mean_hours": 27.1
+  },
+  {
+    "type": "TISH Callback",
+    "n": 502,
+    "median_hours": 16.5,
+    "mean_hours": 26.0
+  },
+  {
+    "type": "Homestead Removal Request",
+    "n": 18,
+    "median_hours": 16.5,
+    "mean_hours": 38.0
+  },
+  {
+    "type": "Traffic Signal Trouble",
+    "n": 2973,
+    "median_hours": 16.3,
+    "mean_hours": 59.8
+  },
+  {
+    "type": "Certificate of Occupancy Request",
+    "n": 174,
+    "median_hours": 16.0,
+    "mean_hours": 21.4
+  },
+  {
+    "type": "Records Management Specialist",
+    "n": 276,
+    "median_hours": 15.5,
+    "mean_hours": 29.6
+  },
+  {
+    "type": "Water Service Issue",
+    "n": 2079,
+    "median_hours": 14.6,
+    "mean_hours": 20.4
+  },
+  {
+    "type": "Homestead Fraud Report",
+    "n": 6,
+    "median_hours": 14.2,
+    "mean_hours": 11.6
+  },
+  {
+    "type": "Hydrant Issue",
+    "n": 503,
+    "median_hours": 13.9,
+    "mean_hours": 31.4
+  },
+  {
+    "type": "Trees Down",
+    "n": 1032,
+    "median_hours": 13.7,
+    "mean_hours": 19.1
+  },
+  {
+    "type": "Permit Issuance",
+    "n": 17,
+    "median_hours": 13.5,
+    "mean_hours": 25.9
   },
   {
     "type": "Assessor Callback Request",
-    "n": 73,
-    "median_hours": 4.6,
-    "mean_hours": 47.5
+    "n": 119,
+    "median_hours": 13.0,
+    "mean_hours": 43.0
+  },
+  {
+    "type": "Traffic Control Officer Complaint",
+    "n": 31,
+    "median_hours": 7.7,
+    "mean_hours": 95.0
+  },
+  {
+    "type": "Plan Review Callback",
+    "n": 5993,
+    "median_hours": 5.2,
+    "mean_hours": 31.9
+  },
+  {
+    "type": "Inoperable Vehicle Complaint",
+    "n": 612,
+    "median_hours": 4.9,
+    "mean_hours": 42.1
   },
   {
     "type": "City Attorney Callback Request",
-    "n": 7,
+    "n": 9,
     "median_hours": 3.2,
-    "mean_hours": 12.5
+    "mean_hours": 11.6
   },
   {
-    "type": "Traffic Congestion Issue",
-    "n": 40,
-    "median_hours": 2.7,
-    "mean_hours": 16.3
+    "type": "Request Application - Land Use / Zoning Change",
+    "n": 9,
+    "median_hours": 2.8,
+    "mean_hours": 54.2
   },
   {
     "type": "Parking Violation - Open311",
-    "n": 16919,
-    "median_hours": 2.5,
-    "mean_hours": 16.4
+    "n": 19896,
+    "median_hours": 2.6,
+    "mean_hours": 17.8
   },
   {
     "type": "Parking Violation Complaint",
-    "n": 23319,
-    "median_hours": 2.4,
-    "mean_hours": 22.2
+    "n": 27302,
+    "median_hours": 2.5,
+    "mean_hours": 24.3
+  },
+  {
+    "type": "Traffic Congestion Issue",
+    "n": 47,
+    "median_hours": 2.5,
+    "mean_hours": 24.8
   },
   {
     "type": "Risk Mgmt Callback Request",
-    "n": 16,
-    "median_hours": 2.0,
-    "mean_hours": 10.8
+    "n": 19,
+    "median_hours": 2.1,
+    "mean_hours": 11.3
   },
   {
     "type": "Animal Complaint - Livability",
-    "n": 20676,
+    "n": 24210,
     "median_hours": 1.9,
-    "mean_hours": 10.6
+    "mean_hours": 12.4
   },
   {
     "type": "Shared Mobility Issue - Open311",
@@ -913,9 +979,9 @@
   },
   {
     "type": "Water Main Break",
-    "n": 324,
+    "n": 373,
     "median_hours": 1.8,
-    "mean_hours": 12.1
+    "mean_hours": 11.8
   },
   {
     "type": "Permit Fee Inquiry",
@@ -925,15 +991,15 @@
   },
   {
     "type": "Animal Complaint - Public Health",
-    "n": 7234,
+    "n": 8518,
     "median_hours": 1.4,
-    "mean_hours": 7.7
+    "mean_hours": 10.0
   },
   {
     "type": "Copy of Permit",
-    "n": 6,
-    "median_hours": 0.9,
-    "mean_hours": 6.2
+    "n": 9,
+    "median_hours": 0.8,
+    "mean_hours": 4.8
   },
   {
     "type": "Elections Callback Request",
@@ -948,32 +1014,38 @@
     "mean_hours": 0.5
   },
   {
+    "type": "Property Management Complaint",
+    "n": 938,
+    "median_hours": 0.2,
+    "mean_hours": 33.6
+  },
+  {
     "type": "Bike Trail Safety Phone",
-    "n": 7,
+    "n": 8,
     "median_hours": 0.1,
-    "mean_hours": 3.7
+    "mean_hours": 3.2
   },
   {
     "type": "Fireworks Complaint",
-    "n": 736,
+    "n": 925,
     "median_hours": 0.0,
     "mean_hours": 0.0
   },
   {
-    "type": "Syringe Litter Concern Pilot Project",
-    "n": 192,
-    "median_hours": 0.0,
-    "mean_hours": 2.7
-  },
-  {
     "type": "Shared Mobility Issue",
-    "n": 1022,
+    "n": 1198,
     "median_hours": 0.0,
     "mean_hours": 0.1
   },
   {
+    "type": "Syringe Litter Concern Pilot Project",
+    "n": 281,
+    "median_hours": 0.0,
+    "mean_hours": 1.8
+  },
+  {
     "type": "Sidewalk Snow Removal Resources",
-    "n": 54,
+    "n": 73,
     "median_hours": 0.0,
     "mean_hours": 0.0
   }

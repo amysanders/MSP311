@@ -1,11 +1,13 @@
 {
-  "n_total_cases": 245704,
-  "n_closed": 243716,
-  "n_open": 1988,
-  "n_unknown_location": 49516,
-  "median_hours": 22.3,
-  "mean_hours": 111.7,
-  "p75_hours": 96.7,
-  "p90_hours": 220.0,
-  "p95_hours": 457.1
+  "first_opened": "2023-07-01",
+  "last_opened": "2026-06-30",
+  "n_total_cases": 292722,
+  "n_closed": 290541,
+  "n_open": 2181,
+  "n_unknown_location": 58769,
+  "median_hours": 22.8,
+  "mean_hours": 117.4,
+  "p75_hours": 98.4,
+  "p90_hours": 236.3,
+  "p95_hours": 498.3
 }

@@ -1,11 +1,11 @@
 """
 Turns the raw 311 CSV into small JSON summaries the frontend can load directly,
-instead of parsing ~250k rows of CSV in the browser.
+instead of parsing ~290k rows of CSV in the browser.
 
 Usage:
     python3 scripts/build_aggregates.py
 
-Reads:  data/raw/minneapolis_311_2024_2026Q2.csv
+Reads:  data/raw/minneapolis_311_2023_2026_3yr.csv   (opened Jul 2023 - Jun 2026)
         data/raw/neighborhoods.geojson
 Writes: data/processed/by_type.json
         data/processed/overall.json
@@ -27,7 +27,7 @@ import statistics
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW_CSV = ROOT / "data" / "raw" / "minneapolis_311_2024_2026Q2.csv"
+RAW_CSV = ROOT / "data" / "raw" / "minneapolis_311_2023_2026_3yr.csv"
 NEIGHBORHOODS_GEOJSON = ROOT / "data" / "raw" / "neighborhoods.geojson"
 OUT_DIR = ROOT / "data" / "processed"
 
@@ -203,8 +203,12 @@ def build_overall():
     n_open = 0
     n_total = 0
     n_unknown_location = 0
+    first_opened = last_opened = None
     for row in load_rows():
         n_total += 1
+        opened = row["OPENEDDATETIME"][:10]  # ISO dates sort as strings
+        first_opened = opened if first_opened is None else min(first_opened, opened)
+        last_opened = opened if last_opened is None else max(last_opened, opened)
         if location_of(row) == UNKNOWN_LOCATION:
             n_unknown_location += 1
         rh = row["resolution_hours"]
@@ -217,6 +221,8 @@ def build_overall():
     n = len(all_hours)
 
     return {
+        "first_opened": first_opened,
+        "last_opened": last_opened,
         "n_total_cases": n_total,
         "n_closed": n,
         "n_open": n_open,
