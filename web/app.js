@@ -37,35 +37,6 @@ function renderOverallStats(overall) {
     .join("");
 }
 
-function renderTypeChart(byType) {
-  // Show the 15 slowest-to-resolve types with a meaningful volume (n >= 50)
-  // so rare, noisy categories don't dominate the chart.
-  const filtered = byType.filter((d) => d.n >= 50).slice(0, 15);
-
-  const ctx = document.getElementById("typeChart");
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: filtered.map((d) => d.type),
-      datasets: [
-        {
-          label: "Median resolution time (hours)",
-          data: filtered.map((d) => d.median_hours),
-          backgroundColor: "#2f6f4f",
-        },
-      ],
-    },
-    options: {
-      indexAxis: "y",
-      maintainAspectRatio: false, // height comes from .chart-wrap, not the aspect ratio
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { title: { display: true, text: "Hours to resolve (median)" } },
-      },
-    },
-  });
-}
-
 // Neighborhoods with fewer closed cases than this get a dashed outline and a
 // caution in the tooltip; their medians are noisy.
 const LOW_VOLUME_N = 300;
@@ -169,15 +140,13 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
 }
 
 async function main() {
-  const [overall, byType, byNeighborhood, boundaries] = await Promise.all([
+  const [overall, byNeighborhood, boundaries] = await Promise.all([
     loadJSON("../data/processed/overall.json"),
-    loadJSON("../data/processed/by_type.json"),
     loadJSON("../data/processed/by_neighborhood.json"),
     loadJSON("../data/processed/neighborhoods.geojson"),
   ]);
   renderSubtitle(overall);
   renderOverallStats(overall);
-  renderTypeChart(byType);
   renderNeighborhoodMap(boundaries, byNeighborhood);
 }
 

@@ -59,7 +59,7 @@ data/
 scripts/
   build_aggregates.py   raw data -> data/processed/*
 web/
-  index.html, style.css, app.js   the visualization itself (Chart.js + Leaflet)
+  index.html, style.css, app.js   the visualization itself (Leaflet map)
 ```
 
 ## Running it
@@ -110,5 +110,7 @@ python3 -m http.server 8000
       neighborhood's per-type medians to the city-wide medians)
 - [ ] Look into why Near - North has so many animal complaints (6,142) —
       possibly cases geocoded to a single address
-- [ ] Shorten or wrap long request-type labels on the by-type chart at phone
-      widths
+- [x] Removed the request-type chart from the top of the page; a request-type
+      picker is planned to replace it (see below)
+- [ ] Design and build a request-type picker (chips for top subjects/types +
+      search + browse) so the map can be filtered by request type
