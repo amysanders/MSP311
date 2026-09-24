@@ -60,6 +60,8 @@ scripts/
   build_aggregates.py   raw data -> data/processed/*
 web/
   index.html, style.css, app.js   the visualization itself (Leaflet map)
+tests/
+  unit tests + checks against the real data files (see Testing, below)
 ```
 
 ## Running it
@@ -73,6 +75,33 @@ python3 scripts/build_aggregates.py
 python3 -m http.server 8000
 # then open http://localhost:8000/web/
 ```
+
+## Testing
+
+```bash
+python3 -m venv .venv                        # first time only
+.venv/bin/pip install -r requirements.txt    # first time only
+.venv/bin/python -m pytest tests/
+```
+
+Two kinds of test, in separate files:
+
+- `tests/test_build_aggregates_units.py` — fast, dependency-free checks of the
+  pure logic (the point-in-polygon join, percentile math) against small
+  made-up shapes, not the real dataset. Safe to run anytime; instant.
+- `tests/test_data_integrity.py` — checks against the *actual current*
+  `data/raw/` and `data/processed/` files: no duplicate case IDs, no bad
+  coordinates, and that row counts conserve across the pipeline (e.g. every
+  neighborhood's cases + unknown-location + outside-boundary sum to the
+  overall total). If you've just changed `data/raw/`, re-run
+  `python3 scripts/build_aggregates.py` first, or these compare a stale
+  `processed/` against a fresher `raw/`.
+
+**Known gap:** the frontend (`web/app.js`) has no automated tests — this
+machine has no Node/npm installed, so there's no JS test runner set up.
+Wording, binning, and map changes there are currently verified by hand in a
+browser. Installing Node (and a lightweight test runner) would close this gap
+if it becomes worth the setup cost.
 
 ## Findings so far
 

@@ -1,0 +1,4 @@
+pandas==2.3.3
+geopandas==1.0.1
+pyogrio==0.11.1
+pytest==8.4.2
