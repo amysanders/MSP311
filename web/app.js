@@ -44,11 +44,13 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 }
 
-// Upper-exclusive bin edges that split `values` into `bins` equal-sized groups.
-function quantileEdges(values, bins) {
-  const sorted = [...values].sort((a, b) => a - b);
+// Upper-exclusive bin edges that split the range [min(values), max(values)]
+// into `bins` equal-width bands (equal-interval, not equal-count).
+function equalIntervalEdges(values, bins) {
+  const min = Math.min(...values);
+  const max = Math.max(...values);
   const edges = [];
-  for (let i = 1; i < bins; i++) edges.push(sorted[Math.floor((sorted.length * i) / bins)]);
+  for (let i = 1; i < bins; i++) edges.push(min + ((max - min) * i) / bins);
   return edges;
 }
 
@@ -71,7 +73,7 @@ function renderMapLegend(edges) {
 
 function renderNeighborhoodMap(geojson, byNeighborhood) {
   const stats = new Map(byNeighborhood.neighborhoods.map((n) => [n.neighborhood, n]));
-  const edges = quantileEdges(
+  const edges = equalIntervalEdges(
     byNeighborhood.neighborhoods.map((n) => n.median_hours),
     MAP_COLORS.length
   );
