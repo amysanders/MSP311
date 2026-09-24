@@ -109,8 +109,8 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
       const lowVolume = s.n_closed < LOW_VOLUME_N;
       lyr.bindTooltip(
         `<div class="map-tooltip"><strong>${escapeHtml(s.neighborhood)}</strong>` +
-          `Median: ${s.median_hours.toFixed(1)} h (${(s.median_hours / 24).toFixed(1)} days)<br>` +
-          `90th percentile: ${(s.p90_hours / 24).toFixed(1)} days<br>` +
+          `Typical wait: ${s.median_hours.toFixed(1)} h (${(s.median_hours / 24).toFixed(1)} days)<br>` +
+          `90% resolved within: ${(s.p90_hours / 24).toFixed(1)} days<br>` +
           `${s.n_cases.toLocaleString()} cases` +
           (lowVolume ? `<br><span class="low-volume-flag">Low volume — interpret with caution</span>` : "") +
           `</div>`,
@@ -131,8 +131,10 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
   const total = byNeighborhood.neighborhoods.reduce((sum, n) => sum + n.n_cases, 0) + unknown.n_cases + outside.n_cases;
   document.getElementById("map-notes").innerHTML =
     `<strong>Not on the map:</strong> ${unknown.n_cases.toLocaleString()} cases ` +
-    `(${((unknown.n_cases / total) * 100).toFixed(1)}%) have no location; their median is ` +
-    `${unknown.median_hours.toFixed(1)} h. Another ${outside.n_cases.toLocaleString()} have coordinates ` +
+    `(${((unknown.n_cases / total) * 100).toFixed(1)}%) have no location &mdash; some categories (like tenant ` +
+    `complaints) appear to have coordinates withheld for privacy; others are likely phone/staff-entered ` +
+    `cases that were never geocoded. Their median resolution time is ${unknown.median_hours.toFixed(1)} h. ` +
+    `Another ${outside.n_cases.toLocaleString()} have coordinates ` +
     `that fall outside every neighborhood boundary.<br>` +
     `<strong>Read with care:</strong> a neighborhood's median reflects the mix of request types ` +
     `reported there, not only how quickly the city responds. Fast-closing types such as animal complaints ` +
