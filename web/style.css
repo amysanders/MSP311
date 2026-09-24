@@ -111,16 +111,7 @@ section h2 {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.legend-swatch.low-volume {
-  border: 1.5px dashed var(--muted);
-  background: transparent;
-}
-
 .map-tooltip strong {
   display: block;
   margin-bottom: 0.15rem;
-}
-
-.map-tooltip .low-volume-flag {
-  color: #a15c00;
 }

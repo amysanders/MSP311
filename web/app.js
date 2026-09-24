@@ -37,10 +37,6 @@ function renderOverallStats(overall) {
     .join("");
 }
 
-// Neighborhoods with fewer closed cases than this get a dashed outline and a
-// caution in the tooltip; their medians are noisy.
-const LOW_VOLUME_N = 300;
-
 // Light -> dark = faster -> slower.
 const MAP_COLORS = ["#e3eee8", "#b5d3c1", "#7fb494", "#4b8f6b", "#25583d"];
 
@@ -70,9 +66,6 @@ function renderMapLegend(edges) {
     (label, i) =>
       `<span class="legend-item"><span class="legend-swatch" style="background:${MAP_COLORS[i]}"></span>${label}</span>`
   );
-  items.push(
-    `<span class="legend-item"><span class="legend-swatch low-volume"></span>Fewer than ${LOW_VOLUME_N} closed cases</span>`
-  );
   document.getElementById("map-legend").innerHTML = items.join("");
 }
 
@@ -96,9 +89,8 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
     return {
       fillColor: MAP_COLORS[binIndex(s.median_hours, edges)],
       fillOpacity: 0.85,
-      color: s.n_closed < LOW_VOLUME_N ? "#6b6b6b" : "#ffffff",
-      weight: s.n_closed < LOW_VOLUME_N ? 1.5 : 1,
-      dashArray: s.n_closed < LOW_VOLUME_N ? "4 3" : null,
+      color: "#ffffff",
+      weight: 1,
     };
   };
 
@@ -106,13 +98,11 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
     style: styleFor,
     onEachFeature: (feature, lyr) => {
       const s = stats.get(feature.properties.name);
-      const lowVolume = s.n_closed < LOW_VOLUME_N;
       lyr.bindTooltip(
         `<div class="map-tooltip"><strong>${escapeHtml(s.neighborhood)}</strong>` +
           `Typical wait: ${s.median_hours.toFixed(1)} h (${(s.median_hours / 24).toFixed(1)} days)<br>` +
           `90% resolved within: ${(s.p90_hours / 24).toFixed(1)} days<br>` +
           `${s.n_cases.toLocaleString()} cases` +
-          (lowVolume ? `<br><span class="low-volume-flag">Low volume — interpret with caution</span>` : "") +
           `</div>`,
         { sticky: true }
       );
