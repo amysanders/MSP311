@@ -76,17 +76,6 @@ python3 -m http.server 8000
 
 ## Findings so far
 
-- Median resolution time across all request types: **22.8 hours** (0.95 days; the
-  page's tile rounds this to 1.0 days).
-- Mean is much higher (117.4 hours) — a long tail of slow-to-resolve
-  categories (e.g. abandoned vehicles, property complaints) pulls the
-  average up. **Median is the more honest headline number.**
-- There's a seasonal slowdown each November/December: the share of cases
-  still open rises through the fall in all three years of data (Nov–Dec 2023:
-  0.6–1.0%; 2024: 4.7–5.5%; 2025: 1.7%, against about 0.1–0.8% in spring and
-  summer months). The size varies a lot from year to year, and older cases
-  have had longer to close, so the years aren't strictly comparable — worth
-  investigating further.
 - By neighborhood, most medians are tightly bunched: the middle 60% of the
   87 neighborhoods fall between about 20 and 25 hours. The extremes are
   fastest **Near - North (3.5 h)** and slowest **Nicollet Island - East Bank
@@ -105,12 +94,9 @@ python3 -m http.server 8000
 
 - [x] Join case LON/LAT to Minneapolis neighborhood boundaries
 - [x] Build the by-neighborhood aggregate + map view
-- [ ] Write up the November/December seasonal pattern
 - [ ] Control for request-type mix on the neighborhood map (e.g. compare each
       neighborhood's per-type medians to the city-wide medians)
 - [ ] Look into why Near - North has so many animal complaints (6,142) —
       possibly cases geocoded to a single address
-- [x] Removed the request-type chart from the top of the page; a request-type
-      picker is planned to replace it (see below)
 - [ ] Design and build a request-type picker (chips for top subjects/types +
       search + browse) so the map can be filtered by request type
