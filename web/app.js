@@ -122,15 +122,11 @@ function renderNeighborhoodMap(geojson, byNeighborhood) {
   const outside = byNeighborhood["Outside neighborhoods"];
   const total = byNeighborhood.neighborhoods.reduce((sum, n) => sum + n.n_cases, 0) + unknown.n_cases + outside.n_cases;
   document.getElementById("map-notes").innerHTML =
-    `<strong>Not on the map:</strong> ${unknown.n_cases.toLocaleString()} cases ` +
+    `${unknown.n_cases.toLocaleString()} cases ` +
     `(${((unknown.n_cases / total) * 100).toFixed(1)}%) have no location &mdash; some categories (like tenant ` +
     `complaints) appear to have coordinates withheld for privacy; others are likely phone/staff-entered ` +
     `cases that were never geocoded. Their median resolution time is ${unknown.median_hours.toFixed(1)} h. ` +
-    `Another ${outside.n_cases.toLocaleString()} have coordinates ` +
-    `that fall outside every neighborhood boundary.<br>` +
-    `<strong>Read with care:</strong> a neighborhood's median reflects the mix of request types ` +
-    `reported there, not only how quickly the city responds. Fast-closing types such as animal complaints ` +
-    `can dominate a neighborhood's number.`;
+    `A neighborhood's median also reflects its mix of request types, not just city response speed.`;
 }
 
 async function main() {
